@@ -18,14 +18,14 @@
       <!-- Info -->
       <div class="container text-center space-2 space-3--lg">
         <div class="w-lg-75 mx-lg-auto">
-          <h1 class="text-white font-weight-medium">Bring your legal practice to the next level</h1>
+          <h1 class="text-white font-weight-medium">Uma nova opção no segmento Imobiliário</h1>
         </div>
         <div class="w-md-75 w-lg-50 mx-md-auto">
           <div class="mb-5">
-            <p class="lead text-light">Space is the leading online template platform helping over 35,500 customers.</p>
+            <p class="lead text-light">rápido, seguro, transparente.</p>
           </div>
           <a class="btn btn-outline-light btn-wide mb-2 mb-md-0" href="https://themes.getbootstrap.com/product/space-multipurpose-responsive-template/">
-            Learn More
+            QUERO INVESTIR
             <span class="fa fa-angle-right ml-2"></span>
           </a>
         </div>
@@ -41,8 +41,8 @@
               <div class="media align-items-center">
                 <img class="max-width-10 mr-3" src="assets/svg/components/teaching-white-icon.svg" alt="Image Description">
                 <div class="media-body">
-                  <h2 class="h4 text-white">Learn from the best</h2>
-                  <p class="text-light mb-0">Manage document assembly with sophisticated yet super-light templates.</p>
+                  <!-- <h2 class="h4 text-white">Learn from the best</h2> -->
+                  <p class="text-light mb-0">Possibilidade de analisar o risco e a garantia de cada operação.</p>
                 </div>
               </div>
               <!-- End Icon Blocks -->
@@ -53,8 +53,8 @@
               <div class="media align-items-center">
                 <img class="max-width-10 mr-3" src="assets/svg/components/mountains-white-icon.svg" alt="Image Description">
                 <div class="media-body">
-                  <h3 class="h4 text-white">Conquer</h3>
-                  <p class="text-light mb-0">Achieve virtually any look and layout from within the one template.</p>
+                  <!-- <h3 class="h4 text-white">Conquer</h3> -->
+                  <p class="text-light mb-0">Retornos maiores sobre os investimentos.</p>
                 </div>
               </div>
               <!-- End Icon Blocks -->
@@ -65,8 +65,8 @@
               <div class="media align-items-center">
                 <img class="max-width-10 mr-3" src="assets/svg/components/get-rewarded-white-icon.svg" alt="Image Description">
                 <div class="media-body">
-                  <h3 class="h4 text-white">Get rewarded</h3>
-                  <p class="text-light mb-0">Find what you need in one template and combine features at will.</p>
+                  <!-- <h3 class="h4 text-white">Get rewarded</h3> -->
+                  <p class="text-light mb-0">Transparência, segurança e controle dos investimentos.</p>
                 </div>
               </div>
               <!-- End Icon Blocks -->
@@ -84,15 +84,15 @@
         <div class="col-md-6 order-md-2 mb-5 mb-md-0">
           <div class="pl-md-4">
             <div class="mb-4">
-              <span class="u-label u-label--sm u-label--purple mb-3">Manage</span>
-              <h2 class="h3">One solution. Endless value.</h2>
-              <p>This is where we sit down, grab a cup of coffee and dial in the details. Understanding the task at hand and ironing out the wrinkles is key. Now that we've aligned the details, it's time to get things mapped out and organized.</p>
+              <!-- <span class="u-label u-label--sm u-label--purple mb-3">Manage</span> -->
+              <!-- <h2 class="h3">One solution. Endless value.</h2> -->
+              <p class="feature-section-paragraphy"><b>Somos um Marketplace</b> de Credito e Investimento Coletivo <b>especializado no Segmento Imobiliário</b> (Peer-to-Peer Lending) rápido, seguro, transparente e online. .</p>
             </div>
-            <a class="btn btn-sm btn-primary btn-wide" href="https://themes.getbootstrap.com/product/space-multipurpose-responsive-template/">
+<!--             <a class="btn btn-sm btn-primary btn-wide" href="https://themes.getbootstrap.com/product/space-multipurpose-responsive-template/">
               Learn More
               <span class="fa fa-angle-right font-size-14 ml-2"></span>
             </a>
-          </div>
+ -->          </div>
         </div>
 
         <div class="col-md-6 order-md-1">
@@ -114,14 +114,14 @@
         <div class="col-md-6 mb-5 mb-md-0">
           <div class="pr-md-4">
             <div class="mb-4">
-              <span class="u-label u-label--sm u-label--purple mb-3">Monitor</span>
-              <h2 class="h3">Case information on a single page</h2>
-              <p>Whether through commerce or just an experience to tell your brand's story, the time has come to start using development languages that fit your projects needs. The time has come to bring those ideas and plans to life.</p>
+              <!-- <span class="u-label u-label--sm u-label--purple mb-3">Monitor</span> -->
+              <!-- <h2 class="h3">Case information on a single page</h2> -->
+              <p class="feature-section-paragraphy">Uma de nossas premissas é a segurança do capital do investidor, e por isso mitigamos os riscos de todas as operações com <b><u>Garantias Reais – Imóveis</u></b>, além da analise de credito dos tomadores de recursos e acompanhamento da operação ate a sua liquidação..</p>
             </div>
-            <a class="btn btn-sm btn-primary btn-wide" href="https://themes.getbootstrap.com/product/space-multipurpose-responsive-template/">
+<!--             <a class="btn btn-sm btn-primary btn-wide" href="https://themes.getbootstrap.com/product/space-multipurpose-responsive-template/">
               Learn More
               <span class="fa fa-angle-right font-size-14 ml-2"></span>
-            </a>
+            </a> -->
           </div>
         </div>
 

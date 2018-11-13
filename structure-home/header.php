@@ -32,7 +32,7 @@
           <div id="navBar" class="collapse navbar-collapse u-header__navbar-collapse py-0">
             <ul class="navbar-nav u-header__navbar-nav">
               <!-- Home -->
-              <li class="nav-item hs-has-sub-menu u-header__nav-item"
+              <li class="nav-item hs-has-sub-menu u-header__nav-item nav-item-to-center"
                   data-event="hover"
                   data-animation-in="fadeInUp"
                   data-animation-out="fadeOut">
@@ -40,7 +40,7 @@
                    aria-haspopup="true"
                    aria-expanded="false"
                    aria-labelledby="homeSubMenu">
-                  Home
+                  Empréstimo
                   <!--<span class="fa fa-angle-down u-header__nav-link-icon"></span>-->
                 </a>
 
@@ -211,7 +211,7 @@
                 <a id="PagesMegaMenu" class="nav-link u-header__nav-link" href="javascript:;"
                    aria-haspopup="true"
                    aria-expanded="false">
-                  Pages
+                  Investimentos
                   <!--<span class="fa fa-angle-down u-header__nav-link-icon"></span>-->
                 </a>
 
@@ -623,13 +623,13 @@
                    data-modal-target="#signupModal"
                    data-overlay-color="#151b26">
                   <span class="fa fa-user-circle mr-1"></span>
-                  Signin
+                  Login
                 </a>
               </li>
               <!-- End Button -->
 
               <!-- Search -->
-              <li class="nav-item u-header__navbar-icon u-header__navbar-v-divider">
+<!--               <li class="nav-item u-header__navbar-icon u-header__navbar-v-divider">
                 <a class="btn btn-xs btn-icon btn-text-dark u-header__search-toggle" href="javascript:;" role="button"
                    aria-haspopup="true"
                    aria-expanded="false"
@@ -641,17 +641,17 @@
                    data-unfold-delay="300"
                    data-unfold-animation-in="slideInUp">
                   <span class="fa fa-search btn-icon__inner"></span>
-                </a>
+                </a> -->
 
                 <!-- Input -->
-                <form id="search" class="js-focus-state input-group form u-header__search u-unfold--css-animation u-unfold--hidden">
+<!--                 <form id="search" class="js-focus-state input-group form u-header__search u-unfold--css-animation u-unfold--hidden">
                   <input class="form-control form__input" type="search" placeholder="Search Space">
                   <div class="input-group-addon u-header__search-addon p-0">
                     <button class="btn btn-primary u-header__search-addon-btn" type="button">
                       <span class="fa fa-search"></span>
                     </button>
                   </div>
-                </form>
+                </form> -->
                 <!-- End Input -->
               </li>
               <!-- End Search -->
@@ -661,7 +661,7 @@
 
           <ul class="navbar-nav flex-row u-header__secondary-nav">
             <!-- Shopping Cart -->
-            <li class="nav-item u-header__navbar-icon-wrapper u-header__navbar-icon">
+<!--             <li class="nav-item u-header__navbar-icon-wrapper u-header__navbar-icon">
               <a id="shoppingCartDropdownInvoker" class="btn btn-xs btn-icon btn-text-dark" href="javascript:;" role="button"
                       aria-controls="shoppingCartDropdown"
                       aria-haspopup="true"
@@ -683,7 +683,7 @@
                 </span>
                 <span class="d-block">Your Cart is Empty</span>
               </div>
-            </li>
+            </li> -->
             <!-- End Shopping Cart -->
 
             <!-- Account Signin -->

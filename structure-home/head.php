@@ -24,7 +24,9 @@
   <link rel="stylesheet" href="assets/vendor/custombox/dist/custombox.min.css">
   <link rel="stylesheet" href="assets/vendor/animate.css/animate.min.css">
   <link rel="stylesheet" href="assets/vendor/slick-carousel/slick/slick.css">
+  
 
   <!-- CSS Space Template -->
   <link rel="stylesheet" href="assets/css/theme.css">
+  <link rel="stylesheet" href="assets/css/specific-styles.css">
 </head>
