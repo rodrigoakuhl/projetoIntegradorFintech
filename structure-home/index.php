@@ -608,7 +608,7 @@
 
     <!-- Content -->
     <div class="p-5">
-      <form class="js-validate">
+      <form action="signup.php" method="post"class="js-novalidate">
         <!-- Signin -->
         <div id="signin" data-target-group="idForm">
           <!-- Title -->
@@ -626,7 +626,7 @@
                   <span class="fa fa-user form__text-inner"></span>
                 </span>
               </div>
-              <input type="email" class="form-control form__input" name="email" required
+              <input type="email" class="form-control form__input" name="email"
                      placeholder="Email"
                      aria-label="Email"
                      data-msg="Please enter a valid email address."
@@ -644,7 +644,7 @@
                   <span class="fa fa-lock form__text-inner"></span>
                 </span>
               </div>
-              <input type="password" class="form-control form__input" name="password" required
+              <input type="password" class="form-control form__input" name="password"
                      placeholder="Password"
                      aria-label="Password"
                      data-msg="Your password is invalid. Please try again."
@@ -770,7 +770,6 @@
               <input type="password" class="form-control form__input" name="confirmPassword" required
                      placeholder="Confirm Password"
                      aria-label="Confirm Password"
-                     data-msg="Password does not match the confirm password."
                      data-error-class="u-has-error"
                      data-success-class="u-has-success">
             </div>
@@ -834,7 +833,7 @@
                   <span class="fa fa-user form__text-inner"></span>
                 </span>
               </div>
-              <input type="email" class="form-control form__input" name="email" required
+              <input type="email" class="form-control form__input" name="email"
                      placeholder="Email"
                      aria-label="Email"
                      data-msg="Please enter a valid email address."

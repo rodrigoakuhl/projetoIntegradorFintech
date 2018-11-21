@@ -32,7 +32,7 @@
           <div id="navBar" class="collapse navbar-collapse u-header__navbar-collapse py-0">
             <ul class="navbar-nav u-header__navbar-nav">
               <!-- Home -->
-              <li class="nav-item hs-has-sub-menu u-header__nav-item nav-item-to-center"
+              <li class="nav-item hs-has-sub-menu u-header__nav-item nav-item-to-center nav-item-margin"
                   data-event="hover"
                   data-animation-in="fadeInUp"
                   data-animation-out="fadeOut">
@@ -618,7 +618,7 @@
 */ ?>
 
               <!-- Button -->
-              <li class="nav-item u-header__nav-item-btn">
+              <li class="nav-item u-header__nav-item-btn nav-item-margin">
                 <a class="btn btn-sm btn-primary" href="#signupModal" role="button"
                    data-modal-target="#signupModal"
                    data-overlay-color="#151b26">
