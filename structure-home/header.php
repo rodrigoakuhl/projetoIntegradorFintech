@@ -40,7 +40,7 @@
                    aria-haspopup="true"
                    aria-expanded="false"
                    aria-labelledby="homeSubMenu">
-                  Empréstimo
+                  QUERO UM EMPRÉSTIMO
                   <!--<span class="fa fa-angle-down u-header__nav-link-icon"></span>-->
                 </a>
 
@@ -211,7 +211,7 @@
                 <a id="PagesMegaMenu" class="nav-link u-header__nav-link" href="javascript:;"
                    aria-haspopup="true"
                    aria-expanded="false">
-                  Investimentos
+                  SOU INVESTIDOR
                   <!--<span class="fa fa-angle-down u-header__nav-link-icon"></span>-->
                 </a>
 
