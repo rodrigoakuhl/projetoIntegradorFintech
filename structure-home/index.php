@@ -133,10 +133,14 @@
     <!-- End Features Section -->
 
     <!-- Features Section -->
-    <div class="container space-2-bottom space-3-bottom--lg">
+    <!----------------------------------------------------------- -->
+    <!-- Tela inibida em 25/11 por Paulo Kuhl conforme definição  -->
+    <!----------------------------------------------------------- -->
+
+    <!-- <div class="container space-2-bottom space-3-bottom--lg">
       <div class="row">
         <div class="col-md-6 mb-9">
-          <!-- Features -->
+
           <div class="media pr-lg-4">
             <span class="u-icon u-icon--md u-icon--shadow bg-white rounded-circle p-2 mr-4">
               <img class="u-icon__inner" src="assets/svg/components/trophy-purple-icon.svg" alt="Image Description">
@@ -146,11 +150,11 @@
               <p class="mb-0">Achieve virtually any look and layout from within the one template.</p>
             </div>
           </div>
-          <!-- End Features -->
+
         </div>
 
         <div class="col-md-6 mb-9">
-          <!-- Features -->
+
           <div class="media pl-lg-4">
             <span class="u-icon u-icon--md u-icon--shadow bg-white rounded-circle p-2 mr-4">
               <img class="u-icon__inner" src="assets/svg/components/rocket-cyan-icon.svg" alt="Image Description">
@@ -160,13 +164,13 @@
               <p class="mb-0">Find what you need in one template and combine features at will.</p>
             </div>
           </div>
-          <!-- End Features -->
+
         </div>
 
         <div class="w-100"></div>
 
         <div class="col-md-6 mb-9">
-          <!-- Features -->
+
           <div class="media pr-lg-4">
             <span class="u-icon u-icon--md u-icon--shadow bg-white rounded-circle p-2 mr-4">
               <img class="u-icon__inner" src="assets/svg/components/idea-primary-icon.svg" alt="Image Description">
@@ -176,11 +180,11 @@
               <p class="mb-0">Manage document assembly with sophisticated yet super-light templates.</p>
             </div>
           </div>
-          <!-- End Features -->
+
         </div>
 
         <div class="col-md-6 mb-9">
-          <!-- Features -->
+
           <div class="media pl-lg-4">
             <span class="u-icon u-icon--md u-icon--shadow bg-white rounded-circle p-2 mr-4">
               <img class="u-icon__inner" src="assets/svg/components/documentation-red-icon.svg" alt="Image Description">
@@ -190,13 +194,13 @@
               <p class="mb-0">Every component and plugin is well documented with live examples.</p>
             </div>
           </div>
-          <!-- End Features -->
+
         </div>
 
         <div class="w-100"></div>
 
         <div class="col-md-6 mb-9 mb-md-0">
-          <!-- Features -->
+
           <div class="media pr-lg-4">
             <span class="u-icon u-icon--md u-icon--shadow bg-white rounded-circle p-2 mr-4">
               <img class="u-icon__inner" src="assets/svg/components/sucure-payment-brown-icon.svg" alt="Image Description">
@@ -206,11 +210,11 @@
               <p class="mb-0">Premium stock images are included with your purchase in the download package.</p>
             </div>
           </div>
-          <!-- End Features -->
+
         </div>
 
         <div class="col-md-6">
-          <!-- Features -->
+
           <div class="media pl-lg-4">
             <span class="u-icon u-icon--md u-icon--shadow bg-white rounded-circle p-2 mr-4">
               <img class="u-icon__inner" src="assets/svg/components/social-services-dark-icon.svg" alt="Image Description">
@@ -220,10 +224,10 @@
               <p class="mb-0">We strive to figure out ways to help your audience grow through all social platforms.</p>
             </div>
           </div>
-          <!-- End Features -->
+
         </div>
       </div>
-    </div>
+    </div> -->
     <!-- End Features Section -->
 
     <!-- CTA Section -->
@@ -383,14 +387,18 @@
     <!-- End Features Section -->
 
     <!-- Clients Section -->
-    <div class="container space-2 space-3--lg">
+    <!----------------------------------------------------------- -->
+    <!-- Tela inibida em 25/11 por Paulo Kuhl conforme definição  -->
+    <!----------------------------------------------------------- -->
+
       <!-- Title -->
+    <!-- <div class="container space-2 space-3--lg">
+
       <div class="w-md-80 w-lg-60 text-center mx-md-auto mb-9">
         <h2 class="h3">Space loved by more than 35,500 brands globally</h2>
       </div>
-      <!-- End Title -->
 
-      <!-- Slick Carousel -->
+
       <div class="js-slick-carousel u-slick"
            data-autoplay="true"
            data-speed="5000"
@@ -447,8 +455,8 @@
           <img class="u-clients" src="assets/img/clients/spotify.png" alt="Image Description">
         </div>
       </div>
-      <!-- End Slick Carousel -->
-    </div>
+
+    </div> -->
     <!-- End Clients Section -->
   </main>
   <!-- ========== END MAIN CONTENT ========== -->
