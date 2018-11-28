@@ -246,10 +246,33 @@
     <!-- Pricing Section -->
     <div class="container space-2 space-3--lg">
       <!-- Title -->
-      <div class="w-md-80 w-lg-60 text-center mx-md-auto mb-9">
-        <span class="u-label u-label--sm u-label--purple mb-3">Pricing</span>
-        <h2 class="h3">No additional costs. Pay for what you use.</h2>
-        <p>Your success is our success so that’s why there are no fees for installation, data migration, or training. Everything is included in the price!</p>
+      <div class="mx-md-auto mb-9">
+          <div class="what-we-do">
+            <h4>O Que fazemos?</h4>
+            <p>
+              Conectamos pessoas e empresas à procura de crédito com investidores e instituições com dinheiro para emprestar.                
+            </p>
+            <p>
+              Os dois lados saem ganhando: as pessoas e empresas pagam taxas menores e os investidores ganham retornos maiores.
+            </p>
+            <img src="assets/img/what-we-do-img.png" alt="">
+          </div>
+      </div>
+      <div class="mx-md-auto mb-9">
+          <div class="what-we-do-advanteges">
+            <ul>
+              <li>Retornos maiores sobre os investimentos</li>
+              <li>Sem taxa de administração</li>
+              <li>Possibilidade de analisar o risco e a garantia de cada operação</li>
+              <li>Transparência, segurança e controle dos investimentos</li>
+            </ul>
+            <p><b>Ambos acessam as melhores taxas</b></p>
+            <ul>
+              <li>Taxas de juros menores do que as oferecidas pelos bancos</li>
+              <li>Menos burocracia</li>
+              <li>Acesso a uma nova fonte de captação</li>
+            </ul>
+          </div>
       </div>
       <!-- End Title -->
 

@@ -7,3 +7,29 @@
 .nav-item-margin {
     margin-left: auto;
 }
+
+.what-we-do-advanteges{
+    display: flex;
+    justify-content: space-between;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    font-size: 1.15rem;
+}
+
+.what-we-do-advanteges p{
+    text-align: center;
+    margin-top: 4%;
+}
+
+
+.what-we-do{
+    text-align: center;
+}
+
+.what-we-do p{
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    font-size: 1.3rem;
+}
+
+.what-we-do img{
+    width: 70%;
+}
