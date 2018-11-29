@@ -3,40 +3,41 @@
     <div class="container space-2">
       <div class="row justify-content-md-between">
         <div class="col-6 col-md-3 col-lg-2 order-lg-3 mb-7 mb-lg-0">
-          <h3 class="h6 text-white mb-3">About</h3>
+          <h3 class="h6 text-white mb-3">Sobre</h3>
 
           <!-- List Group -->
           <div class="list-group list-group-flush list-group-transparent">
-            <a class="list-group-item list-group-item-action" href="pages/about-agency.html">About Agency</a>
-            <a class="list-group-item list-group-item-action" href="pages/about-start-up.html">About Start-Up</a>
-            <a class="list-group-item list-group-item-action" href="pages/services-agency.html">Services Agency</a>
-            <a class="list-group-item list-group-item-action" href="pages/services-start-up.html">Services Start-Up</a>
+            <a class="list-group-item list-group-item-action" href="pages/about-agency.html">O que fazemos?</a>
+            <a class="list-group-item list-group-item-action" href="pages/about-start-up.html">Tipos de empréstimos</a>
+            <a class="list-group-item list-group-item-action" href="pages/services-agency.html">Fale conosco</a>
+            <a class="list-group-item list-group-item-action" href="pages/services-start-up.html">Termos e condições</a>
+            <a class="list-group-item list-group-item-action" href="pages/services-start-up.html">Trabalhe conosco</a>
           </div>
           <!-- End List Group -->
         </div>
 
         <div class="col-6 col-md-3 col-lg-2 order-lg-4 mb-7 mb-lg-0">
-          <h3 class="h6 text-white mb-3">Company</h3>
+          <h3 class="h6 text-white mb-3">Para você ou sua empresa</h3>
 
           <!-- List Group -->
           <div class="list-group list-group-flush list-group-transparent">
-            <a class="list-group-item list-group-item-action" href="pages/contacts-agency.html">Contact Us</a>
-            <a class="list-group-item list-group-item-action" href="pages/help.html">Help</a>
-            <a class="list-group-item list-group-item-action" href="pages/careers.html">Careers</a>
+            <a class="list-group-item list-group-item-action" href="pages/contacts-agency.html">Simule um empréstimo</a>
+            <a class="list-group-item list-group-item-action" href="pages/help.html">Solicite um empréstimo</a>
+            <!-- hide by Cleiton 2018 nov-29 <a class="list-group-item list-group-item-action" href="pages/careers.html">Careers</a>
             <a class="list-group-item list-group-item-action" href="pages/terms.html">Terms &amp; Conditions</a>
-            <a class="list-group-item list-group-item-action" href="pages/privacy.html">Privacy &amp; Policy</a>
+            <a class="list-group-item list-group-item-action" href="pages/privacy.html">Privacy &amp; Policy</a>-->
           </div>
           <!-- End List Group -->
         </div>
 
         <div class="col-6 col-md-3 col-lg-2 order-lg-5 mb-7 mb-lg-0">
-          <h3 class="h6 text-white mb-3">Shop</h3>
+          <h3 class="h6 text-white mb-3">Para investidores</h3>
 
           <!-- List Group -->
           <div class="list-group list-group-flush list-group-transparent">
-            <a class="list-group-item list-group-item-action" href="../shop/classic.html">Classic</a>
-            <a class="list-group-item list-group-item-action" href="../shop/single-product.html">Single Product</a>
-            <a class="list-group-item list-group-item-action" href="../shop/checkout.html">Checkout</a>
+            <a class="list-group-item list-group-item-action" href="../shop/classic.html">Faça seu cadastro</a>
+            <!-- hide by Cleiton 2018 nov-29 <a class="list-group-item list-group-item-action" href="../shop/single-product.html">Single Product</a>
+            <a class="list-group-item list-group-item-action" href="../shop/checkout.html">Checkout</a>-->
           </div>
           <!-- End List Group -->
         </div>
@@ -54,14 +55,14 @@
               <span class="fab fa-twitter min-width-3 text-center mr-2"></span>
               Twitter
             </a>
-            <a class="list-group-item list-group-item-action" href="#">
+            <!-- hide by Cleiton 2018 nov-29 <a class="list-group-item list-group-item-action" href="#">
               <span class="fab fa-dribbble min-width-3 text-center mr-2"></span>
               Dribbble
             </a>
             <a class="list-group-item list-group-item-action" href="#">
               <span class="fab fa-github min-width-3 text-center mr-2"></span>
               GitHub
-            </a>
+            </a>-->
           </div>
           <!-- End List -->
         </div>
@@ -75,7 +76,7 @@
 
           <!-- Language -->
           <div class="btn-group d-block position-relative mb-4 mb-lg-auto">
-            <a id="footerLanguageInvoker" class="btn-text-secondary d-flex align-items-center u-unfold--language-btn rounded py-2 px-3" href="javascript:;" role="button"
+<!--            <a id="footerLanguageInvoker" class="btn-text-secondary d-flex align-items-center u-unfold--language-btn rounded py-2 px-3" href="javascript:;" role="button"
                aria-controls="footerLanguage"
                aria-haspopup="true"
                aria-expanded="false"
@@ -90,7 +91,7 @@
               <span class="font-size-14">English</span>
               <span class="fa fa-angle-down u-unfold__icon-pointer u-unfold--language-icon-pointer ml-4"></span>
             </a>
-
+hide by Cleiton 2018 nov-29-->
             <!-- Content -->
             <div id="footerLanguage" class="u-unfold u-unfold--language bottom-0 left-0" aria-labelledby="footerLanguageInvoker">
               <div class="py-6 px-5">
@@ -156,7 +157,8 @@
           </div>
           <!-- End Language -->
 
-          <p class="small text-muted">All rights reserved. &copy; Space. 2018 Htmlstream.</p>
+<!-- hide by cleiton 2018 nov-29 
+            <p class="small text-muted">All rights reserved. &copy; Space. 2018 Htmlstream.</p> -->
         </div>
       </div>
     </div>

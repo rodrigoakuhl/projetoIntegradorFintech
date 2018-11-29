@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <!-- Title -->
-  <title>App Start-Up | Space - Responsive Website Template</title>
+  <title>REMS | <?= ucfirst($mode)?></title>
 
   <!-- Required Meta Tags Always Come First -->
   <meta charset="utf-8">
