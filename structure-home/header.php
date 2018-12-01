@@ -36,7 +36,7 @@
                   data-event="hover"
                   data-animation-in="fadeInUp"
                   data-animation-out="fadeOut">
-                <a id="homeMegaMenu" class="nav-link u-header__nav-link" href="javascript:;"
+                <a id="homeMegaMenu" class="nav-link u-header__nav-link" href="index.php?mode=emprestimos"
                    aria-haspopup="true"
                    aria-expanded="false"
                    aria-labelledby="homeSubMenu">
@@ -208,7 +208,7 @@
                   data-animation-in="fadeInUp"
                   data-animation-out="fadeOut"
                   data-position="right">
-                <a id="PagesMegaMenu" class="nav-link u-header__nav-link" href="javascript:;"
+                <a id="PagesMegaMenu" class="nav-link u-header__nav-link" href="index.php?mode=investidor"
                    aria-haspopup="true"
                    aria-expanded="false">
                   SOU INVESTIDOR

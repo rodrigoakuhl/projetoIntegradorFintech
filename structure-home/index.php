@@ -1,7 +1,11 @@
 
 <?php 
-    $mode = 'investidor' // The default mode of index page is 'investidor'
-    //$_GET['title'] = $mode;
+    if(isset($_GET['mode'])){
+      $mode = $_GET['mode'];
+    } else {
+      $mode = 'investidor'; // The default mode of index page is 'investidor'
+      //$_GET['title'] = $mode;
+    }
 ?>
 <?php  include('head.php'); ?>
 
