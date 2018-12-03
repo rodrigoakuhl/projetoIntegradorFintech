@@ -370,10 +370,10 @@
 
           <div class="col-md-6 order-md-2">
             <!-- Title -->
-            <div class="mb-4">
-              <span class="u-label u-label--sm u-label--purple mb-3">Responsive</span>
-              <h2 class="h3">Ultimate experience on all devices</h2>
-              <p>The time has come to bring those ideas and plans to life. This is where we really begin to visualize your napkin sketches and make them into beautiful pixels. Enhance your brand with easy to use powerful customization features.</p>
+            <!-- alterações slide 11 -->
+            <div style="width: 1080px">
+              <h2 style="text-align:center">Perguntas?</h2>
+              <p style="text-align:center">Veja as perguntas mais frequentes.</p>
             </div>
             <!-- End Title -->
 
