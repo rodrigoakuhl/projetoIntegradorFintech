@@ -83,7 +83,7 @@
         </div>
 
         <div class="col-md-6 order-md-1" style="margin-bottom: -25%;">
-          <object type="image/png" style="height: 50%" data="assets/img/imagemlayout1.png"></object>
+          <object type="image/png" class="img-fluid" data="assets/img/imagemlayout1.png"></object>
         </div>
       </div>
     </div>
@@ -113,7 +113,7 @@
         </div>
 
         <div class="col-md-6">
-          <object class="our-premisses" type="image/jpeg" data="assets/img/imagemlayout2.jpeg"></object>
+          <object class="img-fluid our-premisses" type="image/jpeg" data="assets/img/imagemlayout2.jpeg"></object>
         </div>
       </div>
     </div>
@@ -222,23 +222,23 @@
       <div class="container text-center space-2 specifc-align-tems">
         <div class="container-landing-scenario">
           <div class="bank-credit">
-            <img src="assets/img/investor-home-bank-credit.png" alt="">
+            <img src="assets/img/investor-home-bank-credit.png" class="img-fluid" alt="">
             <p>Cinco bancos concentram 80% do crédito no país</p>
           </div>
           <div class="interest-graph">
-            <img src="assets/img/investor-home-interest-graph.png" alt="">
+            <img src="assets/img/investor-home-interest-graph.png" class="img-fluid" alt="">
             <p>Taxa de juros, a Selic, no menor nível histórico</p>
           </div>
           <div class="spread-graph">
-            <img src="assets/img/investor-home-spread-graph.png" alt="">
+            <img src="assets/img/investor-home-spread-graph.png" class="img-fluid" alt="">
             <p>Spread bancário no Brasil é alto</p>
           </div>
           <div class="seek-alternatives">
-            <img src="assets/img/investor-home-seek-alternatives.png" alt="">
+            <img src="assets/img/investor-home-seek-alternatives.png" class="img-fluid" alt="">
             <p>Investidores procuram alternativas após a queda de juros</p>
           </div>
           <div class="bank-profit">
-            <img src="assets/img/investor-home-bank-profit.png" alt="">
+            <img src="assets/img/investor-home-bank-profit.png" class="img-fluid" alt="">
             <p>Bancos registram os maiores lucros entre as empresas de capital aberto.</p>
           </div>
         </div>
@@ -268,7 +268,7 @@
             <p>
               Os dois lados saem ganhando: as pessoas e empresas pagam taxas menores e os investidores ganham retornos maiores.
             </p>
-            <img src="assets/img/what-we-do-img.png" alt="">
+            <img src="assets/img/what-we-do-img.png" class="img-fluid" alt="">
           </div>
       </div>
       <div class="mx-md-auto mb-9">
