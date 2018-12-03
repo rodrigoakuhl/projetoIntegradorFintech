@@ -33,3 +33,83 @@
 .what-we-do img{
     width: 70%;
 }
+
+.specifc-align-tems{
+    padding-top: 2.0625rem;
+    padding-bottom: 2.0625rem;
+}
+
+.info-source{
+    color: black;
+    opacity: 0.4;
+}
+
+.container-landing-scenario{
+    display: flex;
+    height: 295px;
+}
+
+.bank-credit{
+    align-self: flex-start;
+}
+
+.bank-credit img{
+    opacity: 0.6;
+}
+
+.bank-credit p{
+    color: black;
+    opacity: 0.7;
+}
+
+.interest-graph{
+    align-self: flex-end;
+}
+
+.interest-graph img{
+    opacity: 0.6;
+}
+
+.interest-graph p{
+    color: black;
+    opacity: 0.7;
+}
+
+.spread-graph{
+    align-self: flex-start;
+}
+
+.spread-graph img{
+    opacity: 0.6;
+}
+
+.spread-graph p{
+    color: black;
+    opacity: 0.7;
+}
+
+.seek-alternatives{
+    align-self: flex-end;
+}
+
+.seek-alternatives img{
+    opacity: 0.6;
+}
+
+.seek-alternatives p{
+    color: black;
+    opacity: 0.7;
+}
+
+.bank-profit{
+    align-self: flex-start;
+}
+
+.bank-profit img{
+    opacity: 0.6;
+}
+
+.bank-profit p{
+    color: black;
+    opacity: 0.7;
+}

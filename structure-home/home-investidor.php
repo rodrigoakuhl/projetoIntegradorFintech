@@ -219,14 +219,40 @@
 
     <!-- CTA Section -->
     <div class="gradient-overlay-half-purple-v2 bg-img-hero-center" style="background-image: url(assets/img/1920x400/img1.jpg);">
-      <div class="container text-center space-2">
-        <div class="w-lg-50 mx-lg-auto">
-          <div class="mb-5">
+      <div class="container text-center space-2 specifc-align-tems">
+        <div class="container-landing-scenario">
+          <div class="bank-credit">
+            <img src="assets/img/investor-home-bank-credit.png" alt="">
+            <p>Cinco bancos concentram 80% do crédito no país</p>
+          </div>
+          <div class="interest-graph">
+            <img src="assets/img/investor-home-interest-graph.png" alt="">
+            <p>Cinco bancos concentram 80% do crédito no país</p>
+          </div>
+          <div class="spread-graph">
+            <img src="assets/img/investor-home-spread-graph.png" alt="">
+            <p>Cinco bancos concentram 80% do crédito no país</p>
+          </div>
+          <div class="seek-alternatives">
+            <img src="assets/img/investor-home-seek-alternatives.png" alt="">
+            <p>Cinco bancos concentram 80% do crédito no país</p>
+          </div>
+          <div class="bank-profit">
+            <img src="assets/img/investor-home-bank-profit.png" alt="">
+            <p>Cinco bancos concentram 80% do crédito no país</p>
+          </div>
+        </div>
+          <!-------------------------------------------->
+          <!-- Elemente hidden by Cleiton 2018 DEC-03 -->
+          <!-------------------------------------------->
+        <!--<div class="w-lg-50 mx-lg-auto">-->
+          <!-- <div class="mb-5">
             <h2 class="h3 text-white">Space makes you look at things from a different perspectives.</h2>
           </div>
           <a class="btn btn-primary btn-wide mb-2 mb-md-0" href="https://themes.getbootstrap.com/product/space-multipurpose-responsive-template/">Start Free Trial</a>
-        </div>
+        </div> -->
       </div>
+      <p class="info-source">Fontes: G1, BACEN, Estadão, Reuters </p>
     </div>
     <!-- End CTA Section -->
 
@@ -338,25 +364,21 @@
     <div class="bg-gray-100">
       <div class="container space-2 space-3--lg">
         <div class="row justify-content-lg-between align-items-md-center">
-          <!-- <div class="col-md-6 col-lg-5 order-md-1 mb-9 mb-md-0">
+          <div class="col-md-6 col-lg-5 order-md-1 mb-9 mb-md-0">
             <object type="image/svg+xml" data="assets/svg/mockups/phone-mockup-3.svg"></object>
-          </div> -->
+          </div>
 
           <div class="col-md-6 order-md-2">
             <!-- Title -->
-            <div style="width: 1080px">
-              <h2 style="text-align:center">Perguntas?</h2>
-              <p style="text-align:center">Veja as perguntas mais frequentes.</p>
+            <div class="mb-4">
+              <span class="u-label u-label--sm u-label--purple mb-3">Responsive</span>
+              <h2 class="h3">Ultimate experience on all devices</h2>
+              <p>The time has come to bring those ideas and plans to life. This is where we really begin to visualize your napkin sketches and make them into beautiful pixels. Enhance your brand with easy to use powerful customization features.</p>
             </div>
-            <!-- <div class="mb-4"> -->
-              <!-- <span class="u-label u-label--sm u-label--purple mb-3">Responsive</span> -->
-              <!-- <h2 class="h3">Ultimate experience on all devices</h2>
-              <p>The time has come to bring those ideas and plans to life. This is where we really begin to visualize your napkin sketches and make them into beautiful pixels. Enhance your brand with easy to use powerful customization features.</p> -->
-            <!-- </div> -->
             <!-- End Title -->
 
             <!-- Button -->
-            <!-- <button type="button" class="btn btn-xs btn-dark text-left mb-2 mb-md-0 mr-md-2">
+            <button type="button" class="btn btn-xs btn-dark text-left mb-2 mb-md-0 mr-md-2">
               <span class="media align-items-center">
                 <span class="fab fa-apple fa-3x mr-3"></span>
                 <span class="d-block">
@@ -364,11 +386,11 @@
                   <strong class="d-block font-size-14">App Store</strong>
                 </span>
               </span>
-            </button> -->
+            </button>
             <!-- End Button -->
 
             <!-- Button -->
-            <!-- <button type="button" class="btn btn-xs btn-dark text-left mb-2 mb-md-0">
+            <button type="button" class="btn btn-xs btn-dark text-left mb-2 mb-md-0">
               <span class="media align-items-center">
                 <span class="fab fa-google-play fa-3x mr-3"></span>
                 <span class="d-block">
@@ -376,23 +398,23 @@
                   <strong class="d-block font-size-14">Google Play</strong>
                 </span>
               </span>
-            </button> -->
+            </button>
             <!-- End Button -->
 
             <!-- Divider -->
-            <!-- <div class="max-width-10">
+            <div class="max-width-10">
               <hr class="my-5">
-            </div> -->
+            </div>
             <!-- End Divider -->
 
             <!-- Review -->
-            <!-- <div class="media">
+            <div class="media">
               <img class="u-avatar rounded-circle mr-3" src="assets/img/100x100/img1.jpg" alt="Image Description">
               <div class="media-body">
                 <h4 class="h6 mb-0">Maria Muszynska</h4>
                 <p class="text-muted">"I love Space! I love the ease of use, I love the fact that I have total creative freedom. The template is really nice and offers quite a large set of options. It's beautiful and the coding is done quickly and seamlessly."</p>
               </div>
-            </div> -->
+            </div>
             <!-- End Review -->
           </div>
         </div>
