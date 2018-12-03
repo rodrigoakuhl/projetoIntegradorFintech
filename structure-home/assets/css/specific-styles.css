@@ -123,7 +123,7 @@
 }
 
 @media screen and (max-width: 900px){
-    .container-landing-scenario{
+    .container-landing-scenario, .what-we-do, .what-we-do-advanteges{
         font-size: 0.6rem;
     }
 }
