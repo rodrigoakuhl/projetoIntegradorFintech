@@ -82,8 +82,8 @@
  -->          </div>
         </div>
 
-        <div class="col-md-6 order-md-1">
-          <object type="image/svg+xml" data="assets/svg/mockups/tablet-mockup-3.svg"></object>
+        <div class="col-md-6 order-md-1" style="margin-bottom: -25%;">
+          <object type="image/png" style="height: 50%" data="assets/img/imagemlayout1.png"></object>
         </div>
       </div>
     </div>
@@ -113,7 +113,7 @@
         </div>
 
         <div class="col-md-6">
-          <object type="image/svg+xml" data="assets/svg/mockups/tablet-mockup-2.svg"></object>
+          <object class="our-premisses" type="image/jpeg" data="assets/img/imagemlayout2.jpeg"></object>
         </div>
       </div>
     </div>
@@ -227,19 +227,19 @@
           </div>
           <div class="interest-graph">
             <img src="assets/img/investor-home-interest-graph.png" alt="">
-            <p>Cinco bancos concentram 80% do crédito no país</p>
+            <p>Taxa de juros, a Selic, no menor nível histórico</p>
           </div>
           <div class="spread-graph">
             <img src="assets/img/investor-home-spread-graph.png" alt="">
-            <p>Cinco bancos concentram 80% do crédito no país</p>
+            <p>Spread bancário no Brasil é alto</p>
           </div>
           <div class="seek-alternatives">
             <img src="assets/img/investor-home-seek-alternatives.png" alt="">
-            <p>Cinco bancos concentram 80% do crédito no país</p>
+            <p>Investidores procuram alternativas após a queda de juros</p>
           </div>
           <div class="bank-profit">
             <img src="assets/img/investor-home-bank-profit.png" alt="">
-            <p>Cinco bancos concentram 80% do crédito no país</p>
+            <p>Bancos registram os maiores lucros entre as empresas de capital aberto.</p>
           </div>
         </div>
           <!-------------------------------------------->
