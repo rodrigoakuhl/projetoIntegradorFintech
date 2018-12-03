@@ -344,6 +344,7 @@
 
           <div class="col-md-6 order-md-2">
             <!-- Title -->
+            <!-- alterações slide 11 -->
             <div style="width: 1080px">
               <h2 style="text-align:center">Perguntas?</h2>
               <p style="text-align:center">Veja as perguntas mais frequentes.</p>
