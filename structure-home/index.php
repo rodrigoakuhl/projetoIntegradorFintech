@@ -288,7 +288,7 @@
         <div id="signup" style="display: none; opacity: 0;" data-target-group="idForm">
           <!-- Title -->
           <header class="text-center mb-5">
-            <h2 class="h4 mb-0">Cadastrar como <?= $mode?></h2>
+            <h2 class="h4 mb-0">Cadastrar como <?= ucfirst($mode)?></h2>
             <p>Preencha os dados abaixo.</p>
           </header>
           <!-- End Title -->
