@@ -220,6 +220,7 @@
     <!-- CTA Section -->
     <div class="gradient-overlay-half-purple-v2 bg-img-hero-center" style="background-image: url(assets/img/1920x400/img1.jpg);">
       <div class="container text-center space-2 specifc-align-tems">
+        <p class="landing-scenario-header">Cenário de Crédito no Brasil</p>
         <div class="container-landing-scenario">
           <div class="bank-credit">
             <img src="assets/img/investor-home-bank-credit.png" class="img-fluid" alt="">

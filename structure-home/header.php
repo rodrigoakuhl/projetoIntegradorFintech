@@ -689,7 +689,8 @@
             <!-- Account Signin -->
             <li class="nav-item u-header__navbar-icon">
               <!-- Account Sidebar Toggle Button -->
-              <a id="sidebarNavToggler" class="btn btn-xs btn-icon btn-text-dark" href="javascript:;" role="button"
+              <!-- Hidden by Cleiton 2018 DEC-03 -->
+              <!-- <a id="sidebarNavToggler" class="btn btn-xs btn-icon btn-text-dark" href="javascript:;" role="button"
                  aria-controls="sidebarContent"
                  aria-haspopup="true"
                  aria-expanded="false"
@@ -701,7 +702,7 @@
                  data-unfold-animation-out="fadeOutRight"
                  data-unfold-duration="500">
                 <span class="fa fa-bars btn-icon__inner font-size-13"></span>
-              </a>
+              </a> -->
               <!-- End Account Sidebar Toggle Button -->
             </li>
             <!-- End Account Signin -->

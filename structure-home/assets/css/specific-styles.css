@@ -44,6 +44,13 @@
     opacity: 0.4;
 }
 
+.landing-scenario-header{
+    font-size: 2rem;
+    color: black;
+    opacity: 0.6;
+    text-align: center;
+}
+
 .container-landing-scenario{
     display: flex;
     height: 295px;

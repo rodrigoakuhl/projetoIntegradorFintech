@@ -177,7 +177,7 @@
 
     <!-- Content -->
     <div class="p-5">
-      <form action="signup.php" method="post"class="js-novalidate">
+      <form action="signin.php" method="post" class="js-novalidate">
         <!-- Signin -->
         <div id="signin" data-target-group="idForm">
           <!-- Title -->
@@ -195,7 +195,7 @@
                   <span class="fa fa-user form__text-inner"></span>
                 </span>
               </div>
-              <input type="email" class="form-control form__input" name="email"
+              <input type="email" class="form-control form__input" required name="signin_email"
                      placeholder="Email"
                      aria-label="Email"
                      data-msg="Please enter a valid email address."
@@ -204,7 +204,7 @@
             </div>
           </div>
           <!-- End Input -->
-
+    
           <!-- Input -->
           <div class="js-form-message mb-3">
             <div class="js-focus-state input-group form">
@@ -213,7 +213,7 @@
                   <span class="fa fa-lock form__text-inner"></span>
                 </span>
               </div>
-              <input type="password" class="form-control form__input" name="password"
+              <input type="password" class="form-control form__input" required name="signin_password"
                      placeholder="Password"
                      aria-label="Password"
                      data-msg="Your password is invalid. Please try again."
@@ -222,7 +222,7 @@
             </div>
           </div>
           <!-- End Input -->
-
+            
           <div class="row mb-3">
             <div class="col-6">
               <!-- Checkbox -->
@@ -244,9 +244,9 @@
           </div>
 
           <div class="mb-3">
-            <button type="submit" class="btn btn-block btn-primary">Signin</button>
+            <button type="submit" name="signin" class="btn btn-block btn-primary">Signin</button>
           </div>
-
+      
           <div class="text-center mb-3">
             <p class="text-muted">
               Do not have an account?
@@ -282,7 +282,8 @@
           <!-- End Signin Social Buttons -->
         </div>
         <!-- End Signin -->
-
+      </form>
+      <form action="signup.php" method="post" class="js-novalidate">
         <!-- Signup -->
         <div id="signup" style="display: none; opacity: 0;" data-target-group="idForm">
           <!-- Title -->
@@ -300,7 +301,7 @@
                   <span class="fa fa-user form__text-inner"></span>
                 </span>
               </div>
-              <input type="email" class="form-control form__input" name="email" required
+              <input type="email" class="form-control form__input" required name="signup_email"
                      placeholder="Email"
                      aria-label="Email"
                      data-msg="Please enter a valid email address."
@@ -318,7 +319,7 @@
                   <span class="fa fa-lock form__text-inner"></span>
                 </span>
               </div>
-              <input type="password" class="form-control form__input" name="password" required
+              <input type="password" class="form-control form__input" required name="signup_password"
                      placeholder="Password"
                      aria-label="Password"
                      data-msg="Your password is invalid. Please try again."
@@ -336,7 +337,7 @@
                   <span class="fa fa-key form__text-inner"></span>
                 </span>
               </div>
-              <input type="password" class="form-control form__input" name="confirmPassword" required
+              <input type="password" class="form-control form__input" required name="signup_confirmPassword"
                      placeholder="Confirm Password"
                      aria-label="Confirm Password"
                      data-error-class="u-has-error"
@@ -346,7 +347,7 @@
           <!-- End Input -->
 
           <div class="mb-3">
-            <button type="submit" class="btn btn-block btn-primary">Signup</button>
+            <button type="submit" name="signup" class="btn btn-block btn-primary">Signup</button>
           </div>
 
           <div class="text-center mb-3">
@@ -384,7 +385,8 @@
           <!-- End Signup Social Buttons -->
         </div>
         <!-- End Signup -->
-
+      </form>
+      <form action="forgot.php" method="post" class="js-novalidate"></form>
         <!-- Forgot Password -->
         <div id="forgotPassword" style="display: none; opacity: 0;" data-target-group="idForm">
           <!-- Title -->
@@ -402,7 +404,7 @@
                   <span class="fa fa-user form__text-inner"></span>
                 </span>
               </div>
-              <input type="email" class="form-control form__input" name="email"
+              <input type="email" class="form-control form__input" required name="recover_email"
                      placeholder="Email"
                      aria-label="Email"
                      data-msg="Please enter a valid email address."
