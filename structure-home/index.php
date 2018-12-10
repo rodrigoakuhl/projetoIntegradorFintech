@@ -182,8 +182,8 @@
         <div id="signin" data-target-group="idForm">
           <!-- Title -->
           <header class="text-center mb-5">
-            <h2 class="h4 mb-0">Please sign in</h2>
-            <p>Signin to manage your account.</p>
+            <h2 class="h4 mb-0">Acessar sua conta</h2>
+            <p>Faça login para gerenciar sua conta.</p>
           </header>
           <!-- End Title -->
 
@@ -214,9 +214,9 @@
                 </span>
               </div>
               <input type="password" class="form-control form__input" required name="signin_password"
-                     placeholder="Password"
+                     placeholder="Senha"
                      aria-label="Password"
-                     data-msg="Your password is invalid. Please try again."
+                     data-msg="Senha inválida, favor tentar novamente."
                      data-error-class="u-has-error"
                      data-success-class="u-has-success">
             </div>
@@ -229,7 +229,7 @@
               <div class="custom-control custom-checkbox d-flex align-items-center text-muted">
                 <input type="checkbox" class="custom-control-input" id="rememberMeCheckbox">
                 <label class="custom-control-label" for="rememberMeCheckbox">
-                  Remember Me
+                  Lembrar minha senha
                 </label>
               </div>
               <!-- End Checkbox -->
@@ -239,21 +239,21 @@
               <a class="js-animation-link float-right" href="javascript:;"
                  data-target="#forgotPassword"
                  data-link-group="idForm"
-                 data-animation-in="fadeIn">Forgot Password?</a>
+                 data-animation-in="fadeIn">Esqueci minha senha</a>
             </div>
           </div>
 
           <div class="mb-3">
-            <button type="submit" name="signin" class="btn btn-block btn-primary">Signin</button>
+            <button type="submit" name="signin" class="btn btn-block btn-primary">Entrar</button>
           </div>
       
           <div class="text-center mb-3">
             <p class="text-muted">
-              Do not have an account?
+              Não possui uma conta?
               <a class="js-animation-link" href="javascript:;"
                  data-target="#signup"
                  data-link-group="idForm"
-                 data-animation-in="fadeIn">Signup
+                 data-animation-in="fadeIn">Cadastrar
               </a>
             </p>
           </div>
@@ -269,13 +269,13 @@
             <div class="col-sm-6 mb-2 mb-sm-0">
               <button type="button" class="btn btn-block btn-facebook">
                 <span class="fab fa-facebook-f mr-2"></span>
-                Signin with Facebook
+                Entrar com Facebook
               </button>
             </div>
             <div class="col-sm-6">
               <button type="button" class="btn btn-block btn-twitter">
                 <span class="fab fa-twitter mr-2"></span>
-                Signin with Twitter
+                Entrar com Twitter
               </button>
             </div>
           </div>
@@ -288,8 +288,8 @@
         <div id="signup" style="display: none; opacity: 0;" data-target-group="idForm">
           <!-- Title -->
           <header class="text-center mb-5">
-            <h2 class="h4 mb-0">Please sign up</h2>
-            <p>Fill out the form to get started.</p>
+            <h2 class="h4 mb-0">Cadastrar como <?= $mode?></h2>
+            <p>Preencha os dados abaixo.</p>
           </header>
           <!-- End Title -->
 
@@ -320,9 +320,9 @@
                 </span>
               </div>
               <input type="password" class="form-control form__input" required name="signup_password"
-                     placeholder="Password"
+                     placeholder="Senha"
                      aria-label="Password"
-                     data-msg="Your password is invalid. Please try again."
+                     data-msg="Senha inválida, favor tentar novamente."
                      data-error-class="u-has-error"
                      data-success-class="u-has-success">
             </div>
@@ -338,7 +338,7 @@
                 </span>
               </div>
               <input type="password" class="form-control form__input" required name="signup_confirmPassword"
-                     placeholder="Confirm Password"
+                     placeholder="Confirmar senha"
                      aria-label="Confirm Password"
                      data-error-class="u-has-error"
                      data-success-class="u-has-success">
@@ -347,16 +347,16 @@
           <!-- End Input -->
 
           <div class="mb-3">
-            <button type="submit" name="signup" class="btn btn-block btn-primary">Signup</button>
+            <button type="submit" name="signup" class="btn btn-block btn-primary">Enviar</button>
           </div>
 
           <div class="text-center mb-3">
             <p class="text-muted">
-              Have an account?
+              Possui uma conta?
               <a class="js-animation-link" href="javascript:;"
                  data-target="#signin"
                  data-link-group="idForm"
-                 data-animation-in="fadeIn">Signin
+                 data-animation-in="fadeIn">Login
               </a>
             </p>
           </div>
@@ -372,13 +372,13 @@
             <div class="col-sm-6 mb-2 mb-sm-0">
               <button type="button" class="btn btn-block btn-facebook">
                 <span class="fab fa-facebook-f mr-2"></span>
-                Signup with Facebook
+                Entrar com Facebook
               </button>
             </div>
             <div class="col-sm-6">
               <button type="button" class="btn btn-block btn-twitter">
                 <span class="fab fa-twitter mr-2"></span>
-                Signup with Twitter
+                Entrar com Twitter
               </button>
             </div>
           </div>
@@ -391,8 +391,8 @@
         <div id="forgotPassword" style="display: none; opacity: 0;" data-target-group="idForm">
           <!-- Title -->
           <header class="text-center mb-5">
-            <h2 class="h4 mb-0">Recover account</h2>
-            <p>Enter your email address and an email with instructions will be sent to you.</p>
+            <h2 class="h4 mb-0">Recuperar senha</h2>
+            <p>Entre com seu email e vamos enviar instruções para recuperar sua senha.</p>
           </header>
           <!-- End Title -->
 
@@ -415,16 +415,16 @@
           <!-- End Input -->
 
           <div class="mb-3">
-            <button type="submit" class="btn btn-block btn-primary">Recover Account</button>
+            <button type="submit" class="btn btn-block btn-primary">Recuperar senha</button>
           </div>
 
           <div class="text-center mb-3">
             <p class="text-muted">
-              Have an account?
+              Possui uma conta?
               <a class="js-animation-link" href="javascript:;"
                  data-target="#signin"
                  data-link-group="idForm"
-                 data-animation-in="fadeIn">Signin
+                 data-animation-in="fadeIn">Login
               </a>
             </p>
           </div>
