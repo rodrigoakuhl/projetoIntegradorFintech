@@ -1,0 +1,136 @@
+/* Features Section */
+.feature-section-paragraphy{
+    margin-top: 80px;
+    width: 92%;
+}
+
+.nav-item-margin {
+    margin-left: auto;
+}
+
+.what-we-do-advanteges{
+    display: flex;
+    justify-content: space-between;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    /* font-size: 1.15rem; */
+}
+
+.what-we-do-advanteges p{
+    text-align: center;
+    margin-top: 4%;
+}
+
+
+.what-we-do{
+    text-align: center;
+}
+
+.what-we-do p{
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    /* font-size: 1.3rem; */
+}
+
+.what-we-do img{
+    width: 70%;
+}
+
+.specifc-align-tems{
+    padding-top: 2.0625rem;
+    padding-bottom: 2.0625rem;
+}
+
+.info-source{
+    color: black;
+    opacity: 0.4;
+}
+
+.landing-scenario-header{
+    font-size: 2rem;
+    color: black;
+    opacity: 0.6;
+    text-align: center;
+}
+
+.container-landing-scenario{
+    display: flex;
+    height: 295px;
+}
+
+.bank-credit{
+    align-self: flex-start;
+    margin-left: 7%;
+}
+
+.bank-credit img{
+    opacity: 0.6;
+}
+
+.bank-credit p{
+    color: black;
+    opacity: 0.7;
+}
+
+.interest-graph{
+    align-self: flex-end;
+}
+
+.interest-graph img{
+    opacity: 0.6;
+}
+
+.interest-graph p{
+    color: black;
+    opacity: 0.7;
+}
+
+.spread-graph{
+    align-self: flex-start;
+}
+
+.spread-graph img{
+    opacity: 0.6;
+}
+
+.spread-graph p{
+    color: black;
+    opacity: 0.7;
+}
+
+.seek-alternatives{
+    align-self: flex-end;
+}
+
+.seek-alternatives img{
+    opacity: 0.6;
+}
+
+.seek-alternatives p{
+    color: black;
+    opacity: 0.7;
+}
+
+.bank-profit{
+    align-self: flex-start;
+}
+
+.bank-profit img{
+    opacity: 0.6;
+}
+
+.bank-profit p{
+    color: black;
+    opacity: 0.7;
+}
+
+
+.our-premisses{
+    margin-top: 7%;
+    border-radius: 50%;
+    height: 70%;
+}
+
+@media screen and (max-width: 900px){
+    .container-landing-scenario, .what-we-do, .what-we-do-advanteges{
+        font-size: 0.6rem;
+    }
+}

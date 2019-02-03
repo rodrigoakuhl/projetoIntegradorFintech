@@ -1,1 +1,40 @@
-{"users":[{"email":"duarte.cleiton@outlook.com","password":"$2y$10$NaZQ46kyN2VyYXhVKvtE7uVRPq48FFIZawZQtufWDL.oI.YsiNd6i"},{"email":"teste02@teste.com","password":"$2y$10$XZp5XwA2.oFQqzEj4NnEQuuKwI\/JoTQywrnIBs.HsvrlurDtTnYA2"},{"email":"teste03@teste.com","password":"$2y$10$.s1N3qKSn1EIf\/\/43xtJWO7d0DuR.KrLBYH1Nw1iT83Knc27g.5de"},{"email":"teste04@teste.com","password":"$2y$10$7kLPexCbe0HLbD3yARC2Au3POAxXcE3DtKSbKHVdWxXnjYfq40S.u"},{"email":"cleiton.dooarte@gmail.com","password":"$2y$10$WFkuciughu85IBYKyjc6Nuc8w.me0M2PHXD3XKY.H9pq4i\/xhuBPy"},{"email":"teste06@teste.com","password":"$2y$10$dg\/Ht3VNR4MgM3mCqUJffeMNZG7FO32iIjY4VTSyBtBkTuz0gldIa"},{"email":"teste07@teste.com","password":"$2y$10$5cQnc7LmfBStVCrFdo1lluzM2peGltBalVxEeVjYvCNVWzylCmAhe"}]}
+{
+    "users": [
+        {
+            "email": "duarte.cleiton@outlook.com",
+            "password": "$2y$10$NaZQ46kyN2VyYXhVKvtE7uVRPq48FFIZawZQtufWDL.oI.YsiNd6i"
+        },
+        {
+            "email": "teste02@teste.com",
+            "password": "$2y$10$XZp5XwA2.oFQqzEj4NnEQuuKwI\/JoTQywrnIBs.HsvrlurDtTnYA2"
+        },
+        {
+            "email": "teste03@teste.com",
+            "password": "$2y$10$.s1N3qKSn1EIf\/\/43xtJWO7d0DuR.KrLBYH1Nw1iT83Knc27g.5de"
+        },
+        {
+            "email": "teste04@teste.com",
+            "password": "$2y$10$7kLPexCbe0HLbD3yARC2Au3POAxXcE3DtKSbKHVdWxXnjYfq40S.u"
+        },
+        {
+            "email": "cleiton.dooarte@gmail.com",
+            "password": "$2y$10$WFkuciughu85IBYKyjc6Nuc8w.me0M2PHXD3XKY.H9pq4i\/xhuBPy"
+        },
+        {
+            "email": "teste06@teste.com",
+            "password": "$2y$10$dg\/Ht3VNR4MgM3mCqUJffeMNZG7FO32iIjY4VTSyBtBkTuz0gldIa"
+        },
+        {
+            "email": "teste07@teste.com",
+            "password": "$2y$10$5cQnc7LmfBStVCrFdo1lluzM2peGltBalVxEeVjYvCNVWzylCmAhe"
+        },
+        {
+            "email": "thomaz@gmail.com",
+            "password": "$2y$10$ikd4ll4vsHP6B06AWJP5g.OkS6BK..gHuo.KBOuiqjrQ2jXmKUQKe"
+        },
+        {
+            "email": "test100@test.com",
+            "password": "$2y$10$S2tShBPkq27ta1zJAkkUR.AJLfxQ4vCptR6qBJNzh8oelFyvbWqKC"
+        }
+    ]
+}
