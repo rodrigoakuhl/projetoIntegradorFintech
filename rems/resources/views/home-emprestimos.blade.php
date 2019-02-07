@@ -1,3 +1,6 @@
+  @extends('layout')
+
+  @section('home-emprestimos')
   <!-- ========== MAIN CONTENT ========== -->
   <main id="content" role="main">
     <!-- Hero Section -->
@@ -50,7 +53,7 @@
             <div class="col-sm-6 col-lg-4">
               <!-- Icon Blocks -->
               <div class="media align-items-center">
-                <img class="max-width-10 mr-3" src="{{URL::asset('svg/components/get-rewarded-white-icon.svgx')}}" alt="Image Description">
+                <img class="max-width-10 mr-3" src="{{URL::asset('svg/components/get-rewarded-white-icon.svg')}}" alt="Image Description">
                 <div class="media-body">
                   <!-- <h3 class="h4 text-white">Get rewarded</h3> -->
                   <p class="text-light mb-0">Seja financiado diretamente por investidores.</p>
@@ -498,3 +501,4 @@
     <!-- End Clients Section -->
   </main>
   <!-- ========== END MAIN CONTENT ========== -->
+@endsection

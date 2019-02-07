@@ -13,11 +13,11 @@
 
   @if ($mode == 'investidor')
   
-    @include('home-investidor')<!-- This include receive page mode ('investidor or emprestimo') from tag <a> caller-->
+    @yield('home-investidor')<!-- This include receive page mode ('investidor or emprestimo') from tag <a> caller-->
 
   @else
     
-    @include('home-emprestimos')
+    @yield('home-emprestimos')
   
   @endif
   
@@ -176,7 +176,8 @@
 
     <!-- Content -->
     <div class="p-5">
-      <form action="signin.blade.php" method="post" class="js-novalidate">
+      <form action="usuario-login" method="POST" class="js-novalidate">
+        @csrf
         <!-- Signin -->
         <div id="signin" data-target-group="idForm">
           <!-- Title -->
@@ -194,7 +195,7 @@
                   <span class="fa fa-user form__text-inner"></span>
                 </span>
               </div>
-              <input type="email" class="form-control form__input" required name="signin_email"
+              <input type="email" class="form-control form__input" required name="login_email"
                      placeholder="Email"
                      aria-label="Email"
                      data-msg="Please enter a valid email address."
@@ -212,7 +213,7 @@
                   <span class="fa fa-lock form__text-inner"></span>
                 </span>
               </div>
-              <input type="password" class="form-control form__input" required name="signin_password"
+              <input type="password" class="form-control form__input" required name="login_senha"
                      placeholder="Senha"
                      aria-label="Password"
                      data-msg="Senha inválida, favor tentar novamente."
@@ -243,7 +244,7 @@
           </div>
 
           <div class="mb-3">
-            <button type="submit" name="signin" class="btn btn-block btn-primary">Entrar</button>
+            <button type="submit" name="login" class="btn btn-block btn-primary">Entrar</button>
           </div>
       
           <div class="text-center mb-3">
@@ -282,7 +283,7 @@
         </div>
         <!-- End Signin -->
       </form>
-      <form action="{{url('signup')}}" method="post" class="js-novalidate">
+      <form action="usuario-cadastrar" method="POST" class="js-novalidate">
         @csrf
         <!-- Signup -->
         <div id="signup" style="display: none; opacity: 0;" data-target-group="idForm">
@@ -301,7 +302,7 @@
                   <span class="fa fa-user form__text-inner"></span>
                 </span>
               </div>
-              <input type="email" class="form-control form__input" required name="signup_email"
+              <input type="email" class="form-control form__input" required name="cadastrar_email"
                      placeholder="Email"
                      aria-label="Email"
                      data-msg="Please enter a valid email address."
@@ -319,7 +320,7 @@
                   <span class="fa fa-lock form__text-inner"></span>
                 </span>
               </div>
-              <input type="password" class="form-control form__input" required name="signup_password"
+              <input type="password" class="form-control form__input" required name="cadastrar_senha"
                      placeholder="Senha"
                      aria-label="Password"
                      data-msg="Senha inválida, favor tentar novamente."
@@ -337,7 +338,7 @@
                   <span class="fa fa-key form__text-inner"></span>
                 </span>
               </div>
-              <input type="password" class="form-control form__input" required name="signup_confirmPassword"
+              <input type="password" class="form-control form__input" required name="cadastrar_confirmarSenha"
                      placeholder="Confirmar senha"
                      aria-label="Confirm Password"
                      data-error-class="u-has-error"

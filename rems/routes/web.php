@@ -11,10 +11,11 @@
 |
 */
 
-Route::get('/{mode?}', function ($mode = null) {
-    if($mode != null){
-        return view('index')->with('mode', $mode);    
-    }else{
-        return view('index')->with('mode', 'investidor');
-    }
+
+Route::get('/{mode?}', 'HomeController@showHome');
+
+Route::post('usuario-cadastrar', 'UsuariosController@cadastrar');
+Route::post('usuario-login', 'UsuariosController@login');
+Route::get('dashboard/oportunidades', function(){
+    return view('pages-starter');
 });

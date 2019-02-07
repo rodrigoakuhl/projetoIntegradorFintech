@@ -1,3 +1,6 @@
+  @extends('layout')
+
+  @section('home-investidor')
   <!-- ========== MAIN CONTENT ========== -->
   <main id="content" role="main">
     <!-- Hero Section -->
@@ -497,3 +500,4 @@
     <!-- End Clients Section -->
   </main>
   <!-- ========== END MAIN CONTENT ========== -->
+  @endsection
