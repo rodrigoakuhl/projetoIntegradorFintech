@@ -11,11 +11,20 @@
 |
 */
 
+Route::get('/', 'PaginaInicialController@showInvestidorHome');
 
-Route::get('/{mode?}', 'HomeController@showHome');
+Route::get('/investidor', 'PaginaInicialController@showInvestidorHome');
+Route::get('/emprestimos', 'PaginaInicialController@showEmprestimosHome');
 
-Route::post('usuario-cadastrar', 'UsuariosController@cadastrar');
-Route::post('usuario-login', 'UsuariosController@login');
+
 Route::get('dashboard/oportunidades', function(){
     return view('pages-starter');
+});
+
+Auth::routes();
+
+
+Route::get('sair', function(){
+    Auth::logout();
+    return redirect('/');
 });

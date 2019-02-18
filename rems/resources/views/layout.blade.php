@@ -176,7 +176,7 @@
 
     <!-- Content -->
     <div class="p-5">
-      <form action="usuario-login" method="POST" class="js-novalidate">
+      <form action="{{ route('login') }}" method="POST" class="js-novalidate">
         @csrf
         <!-- Signin -->
         <div id="signin" data-target-group="idForm">
@@ -195,7 +195,7 @@
                   <span class="fa fa-user form__text-inner"></span>
                 </span>
               </div>
-              <input type="email" class="form-control form__input" required name="login_email"
+              <input type="email" class="form-control form__input" required name="email"
                      placeholder="Email"
                      aria-label="Email"
                      data-msg="Please enter a valid email address."
@@ -213,7 +213,7 @@
                   <span class="fa fa-lock form__text-inner"></span>
                 </span>
               </div>
-              <input type="password" class="form-control form__input" required name="login_senha"
+              <input type="password" class="form-control form__input" required name="password"
                      placeholder="Senha"
                      aria-label="Password"
                      data-msg="Senha inválida, favor tentar novamente."
@@ -227,7 +227,7 @@
             <div class="col-6">
               <!-- Checkbox -->
               <div class="custom-control custom-checkbox d-flex align-items-center text-muted">
-                <input type="checkbox" class="custom-control-input" id="rememberMeCheckbox">
+                <input type="checkbox" class="custom-control-input" id="rememberMeCheckbox" name="remember">
                 <label class="custom-control-label" for="rememberMeCheckbox">
                   Lembrar minha senha
                 </label>
@@ -244,7 +244,7 @@
           </div>
 
           <div class="mb-3">
-            <button type="submit" name="login" class="btn btn-block btn-primary">Entrar</button>
+            <button type="submit" class="btn btn-block btn-primary">Entrar</button>
           </div>
       
           <div class="text-center mb-3">
@@ -283,13 +283,13 @@
         </div>
         <!-- End Signin -->
       </form>
-      <form action="usuario-cadastrar" method="POST" class="js-novalidate">
+      <form action="{{ route('register') }}" method="POST" class="js-novalidate">
         @csrf
         <!-- Signup -->
         <div id="signup" style="display: none; opacity: 0;" data-target-group="idForm">
           <!-- Title -->
           <header class="text-center mb-5">
-            <h2 class="h4 mb-0">Cadastrar como <?= ucfirst('investidor')?></h2>
+            <h2 class="h4 mb-0">Cadastrar como {{ucfirst($mode)}}</h2>
             <p>Preencha os dados abaixo.</p>
           </header>
           <!-- End Title -->
@@ -302,7 +302,26 @@
                   <span class="fa fa-user form__text-inner"></span>
                 </span>
               </div>
-              <input type="email" class="form-control form__input" required name="cadastrar_email"
+              <input type="text" class="form-control form__input" required name="name"
+                     placeholder="Nome"
+                     aria-label="Nome"
+                     data-msg="Favor inserir seu Nome"
+                     data-error-class="u-has-error"
+                     data-success-class="u-has-success">
+            </div>
+          </div>
+          <!-- End Input -->
+
+
+          <!-- Input -->
+          <div class="js-form-message mb-3">
+            <div class="js-focus-state input-group form">
+              <div class="input-group-prepend form__prepend">
+                <span class="input-group-text form__text">
+                  <span class="fa fa-user form__text-inner"></span>
+                </span>
+              </div>
+              <input type="email" class="form-control form__input" required name="email"
                      placeholder="Email"
                      aria-label="Email"
                      data-msg="Please enter a valid email address."
@@ -320,7 +339,7 @@
                   <span class="fa fa-lock form__text-inner"></span>
                 </span>
               </div>
-              <input type="password" class="form-control form__input" required name="cadastrar_senha"
+              <input type="password" class="form-control form__input" required name="password"
                      placeholder="Senha"
                      aria-label="Password"
                      data-msg="Senha inválida, favor tentar novamente."
@@ -338,7 +357,7 @@
                   <span class="fa fa-key form__text-inner"></span>
                 </span>
               </div>
-              <input type="password" class="form-control form__input" required name="cadastrar_confirmarSenha"
+              <input type="password" class="form-control form__input" required name="password_confirmation"
                      placeholder="Confirmar senha"
                      aria-label="Confirm Password"
                      data-error-class="u-has-error"
