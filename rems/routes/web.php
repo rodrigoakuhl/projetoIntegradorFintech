@@ -17,9 +17,7 @@ Route::get('/investidor', 'PaginaInicialController@showInvestidorHome');
 Route::get('/emprestimos', 'PaginaInicialController@showEmprestimosHome');
 
 
-Route::get('dashboard/oportunidades', function(){
-    return view('pages-starter');
-});
+Route::get('dashboard/oportunidades', 'OportunidadeController@exibirOportunidades');
 
 Auth::routes();
 
