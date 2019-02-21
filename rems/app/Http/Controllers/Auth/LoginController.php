@@ -4,6 +4,9 @@ namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
+use Auth;
+use Socialite;
+use App\User;
 
 class LoginController extends Controller
 {
@@ -37,6 +40,46 @@ class LoginController extends Controller
         $this->middleware('guest')->except('logout');
     }
 
-    
+//************************************************************************** */
 
+    /* Redireciona para Facebook, Git, ....*/
+    public function redirectToProvider($provider) {
+        return Socialite::driver($provider)->redirect();
+    }
+
+    /* Retorno do usuário do Facebook, GRT,....*/
+    public function handleProviderCallback($provider) {
+        $user = Socialite::driver($provider)->user(); /* retono dos dados do usuário */
+
+        $authUser = $this->findOrCreateUser($user, $provider);
+        Auth::login($authUser, true);
+        return redirect($this->redirectTo);
+    }
+
+    /* Pesquisa o usuário pelo usuário(provider_id) ou email  ....*/
+    public function findOrCreateUser($user, $provider) {
+        $authUser = User::where('provider_id', '=', $user->id)->first();
+        if ($authUser) {
+            return $authUser;
+        }
+
+        $authUser = User::Where('email', '=', $user->email)->first();
+        if ($authUser) {
+            return $authUser;
+        }
+
+    /* Cria novo usuário se não achar por provider_id ou email  ....*/
+        $authUser = new User;
+        $authUser->name = $user->name;
+        $authUser->email = $user->email;
+        $authUser->provider = $provider;
+        $authUser->provider_id = $user->id;
+        $authUser->password = '1';
+        $authUser->photo = $user->avatar;
+        $authUser->save();
+        return $authUser;
+
+//************************************************************************** */
+
+    }
 }

@@ -1,5 +1,5 @@
 @extends('layouts.app')
-
+ 
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
@@ -64,6 +64,17 @@
                                 @endif
                             </div>
                         </div>
+                        
+                        <hr>
+
+                        <div>
+                            <a href="{{ url('/auth/facebook') }}">Facebook</a>
+                            -
+                            <!-- <a href="{{ url('/auth/github') }}">GitHub</a> -->
+
+
+                        </div>
+
                     </form>
                 </div>
             </div>

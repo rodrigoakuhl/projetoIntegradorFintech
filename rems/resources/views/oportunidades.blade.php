@@ -622,22 +622,24 @@
                                                     </tr>
                                                 </thead>
                                                 <tbody>
+                                                    @foreach($oportunidades as $oportunidade)
                                                     <tr>
-                                                        <td></td>
-                                                        <td></td>
-                                                        <td></td>
-                                                        <td></td>
-                                                        <td></td>
-                                                        <td></td>
-                                                        <td></td>
+                                                        <td> {{ $oportunidade->id }} </td>
+                                                        <td> {{ $oportunidade->rate }} </td>
+                                                        <td> {{ $oportunidade->requested_amount }} </td>
+                                                        <td> {{ $oportunidade->duration }} </td>
+                                                        <td> {{ $oportunidade->return_rate }} </td>
+                                                        <td> {{ $oportunidade->guarantee_percent }} </td>
+                                                        <td> {{ $oportunidade->date_end }} </td>
                                                         <td>
                                                             <div class="progress progress-sm">
                                                                 <div class="progress-bar progress-lg bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
                                                             </div>
+                                                            {{ $oportunidade->funding_completed }}
                                                         </td>
-                                                        <td></td>
+                                                        <td>{{ $oportunidade->status }}</td>
                                                     </tr>
-                                                    
+                                                    @endforeach
                                                 </tbody>
                                             </table>
                                         </div> <!-- end table-responsive-->

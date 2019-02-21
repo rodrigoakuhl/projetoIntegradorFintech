@@ -21,8 +21,10 @@ Route::get('dashboard/oportunidades', 'OportunidadeController@exibirOportunidade
 
 Auth::routes();
 
-
 Route::get('sair', function(){
     Auth::logout();
     return redirect('/');
 });
+
+Route::get('auth/{provider}', 'Auth\LoginController@redirectToProvider');
+Route::get('auth/{provider}/callback', 'Auth\LoginController@handleProviderCallback');
