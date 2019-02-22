@@ -519,11 +519,10 @@
                                 <a class="nav-link dropdown-toggle nav-user arrow-none mr-0" data-toggle="dropdown" href="#" role="button" aria-haspopup="false"
                                     aria-expanded="false">
                                     <span class="account-user-avatar"> 
-                                        <img src="{{URL::asset('dash/assets/images/users/avatar-1.jpg')}}" alt="user-image" class="rounded-circle">
+                                        <img src="{{Auth::user()->photo}}" alt="user-image" class="rounded-circle">
                                     </span>
                                     <span>
-                                        <span class="account-user-name">Dominic Keller</span>
-                                        <span class="account-position">Founder</span>
+                                        <span class="account-user-name"> {{ Auth::user()->name }}</span>
                                     </span>
                                 </a>
                                 <div class="dropdown-menu dropdown-menu-right dropdown-menu-animated profile-dropdown ">
@@ -626,16 +625,16 @@
                                                     <tr>
                                                         <td> {{ $oportunidade->id }} </td>
                                                         <td> {{ $oportunidade->rate }} </td>
-                                                        <td> {{ $oportunidade->requested_amount }} </td>
+                                                        <td> {{  'R$ '.number_format($oportunidade->requested_amount, 2, ',', '.') }} </td>
                                                         <td> {{ $oportunidade->duration }} </td>
-                                                        <td> {{ $oportunidade->return_rate }} </td>
-                                                        <td> {{ $oportunidade->guarantee_percent }} </td>
-                                                        <td> {{ $oportunidade->date_end }} </td>
+                                                        <td> {{  number_format($oportunidade->return_rate, 2, ',', '.').'%' }} </td>
+                                                        <td> {{  number_format($oportunidade->guarantee_percent, 0, ',', '.').'%' }} </td>
+                                                        <td> {{ date( 'd/m/Y' , strtotime($oportunidade->date_end))}} </td>
                                                         <td>
                                                             <div class="progress progress-sm">
-                                                                <div class="progress-bar progress-lg bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                <div class="progress-bar progress-lg bg-success" role="progressbar" style="width: {{ $oportunidade->funding_completed }}%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
                                                             </div>
-                                                            {{ $oportunidade->funding_completed }}
+                                                            {{  number_format($oportunidade->funding_completed, 0, ',', '.').'%' }}
                                                         </td>
                                                         <td>{{ $oportunidade->status }}</td>
                                                     </tr>

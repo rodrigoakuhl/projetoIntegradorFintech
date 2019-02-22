@@ -269,7 +269,8 @@
             <div class="col-sm-6 mb-2 mb-sm-0">
               <button type="button" class="btn btn-block btn-facebook">
                 <span class="fab fa-facebook-f mr-2"></span>
-                Entrar com Facebook
+                <a href="auth/facebook"> Entrar com Facebook </a>
+              
               </button>
             </div>
             <div class="col-sm-6">
@@ -392,7 +393,7 @@
             <div class="col-sm-6 mb-2 mb-sm-0">
               <button type="button" class="btn btn-block btn-facebook">
                 <span class="fab fa-facebook-f mr-2"></span>
-                Entrar com Facebook
+                <a href="auth/facebook"> Entrar com Facebook </a>
               </button>
             </div>
             <div class="col-sm-6">
