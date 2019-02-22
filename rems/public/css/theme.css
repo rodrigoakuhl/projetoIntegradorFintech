@@ -6683,3 +6683,58 @@ button:focus {
 .u-skippy {
   display: none;
 }
+
+
+.pessoa-fisica-imagem
+{
+  align-content: center;
+  block-size: 120px;
+  margin-top: 40px;
+}
+
+.pessoa-fisica-frase
+{
+  margin-top: 15px;
+}
+
+.empreendedores-frase
+{
+  color: black;
+  margin-top: 10px;
+}
+
+.empreendedores-imagem
+{
+  align-content: center;
+  block-size: 120px;
+  margin-top: 32px;
+}
+
+.pessoa-fisica-linha
+{
+  margin-top: 20px;
+}
+
+.empreendedores-linha
+{
+  margin-top: -6px;
+}
+
+.d-block text-muted-empreendedor
+{
+  color: white;
+}
+
+.empresas-imagem
+{
+  /* margin-bottom:53px;
+  margin-top: 22px */
+
+  margin-bottom: 35px;
+  margin-top: 45px;
+}
+
+.empresas-frase 
+{
+  margin-top: -9px;
+}

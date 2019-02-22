@@ -4,7 +4,7 @@
   <!-- ========== MAIN CONTENT ========== -->
   <main id="content" role="main">
     <!-- Hero Section -->
-    <div class="gradient-overlay-half-purple-v1 bg-img-hero-center" style="background-image: url({{URL::asset('img/1920x1080/predios2.jpg);')}}">
+    <div class="gradient-overlay-half-purple-v1 bg-img-hero-center" style="background-image: url({{URL::asset('img/1920x1080/investidor-fundo.jpg);')}}">
       <!-- Info -->
       <div class="container text-center space-2 space-3--lg">
         <div class="w-lg-75 mx-lg-auto">
@@ -298,19 +298,27 @@
         <div class="card">
           <!-- Header -->
           <header class="card-body pt-6">
-            <h4>Team</h4>
+
+          <img class="pessoa-fisica-imagem" src="{{URL::asset('img/1920x1080/man.svg')}}" class="img-fluid" alt="">
+          <h5 class="pessoa-fisica-frase">
+            <b> Pessoa Física </b>
+          </h5>
+          <p class="pessoa-fisica-linha">____________________</p>
+          <small class="d-block text-muted">Rendimento acima de R$ 10 mil por mês </small>
+
+            <!-- <h4>Team</h4>
             <h5 class="h1 text-primary">
               $69
             </h5>
             <p>per active case, per month<br>billed monthly</p>
-            <small class="d-block text-muted">No credit card required. Request a Demo</small>
+            <small class="d-block text-muted">No credit card required. Request a Demo</small> -->
           </header>
           <!-- End Header -->
 
           <!-- Content -->
-          <div class="card-footer border-0 pb-6">
+          <!-- <div class="card-footer border-0 pb-6">
             <button type="button" class="btn btn-sm btn-primary">Start Free Trial</button>
-          </div>
+          </div> -->
           <!-- End Content -->
         </div>
         <!-- End Pricing -->
@@ -319,19 +327,26 @@
         <div class="card bg-purple text-white">
           <!-- Header -->
           <header class="card-body pt-6">
-            <h4>Growth</h4>
+
+          <img class="empreendedores-imagem" src="{{URL::asset('img/1920x1080/team.svg')}}" class="img-fluid" alt="">
+           <h5 class="empreendedores-frase">
+            <b>Empreendedores e Pequenas Empresas</b>
+           </h5>
+           <p class="empreendedores-linha">____________________</p>
+           <small class="d-block text-muted-empreendedor">Receita Anual: < R$ 5 Milhões </small>
+            <!-- <h4>Growth</h4>
             <h5 class="h1">
               $99
             </h5>
             <p class="text-light">per active case, per month<br>billed monthly</p>
-            <small class="d-block text-white-50">No credit card required. Request a Demo</small>
+            <small class="d-block text-white-50">No credit card required. Request a Demo</small> -->
           </header>
           <!-- End Header -->
 
           <!-- Content -->
-          <div class="card-footer bg-purple border-0 pb-6">
+          <!-- <div class="card-footer bg-purple border-0 pb-6">
             <button type="button" class="btn btn-sm btn-light">Start Free Trial</button>
-          </div>
+          </div> -->
           <!-- End Content -->
         </div>
         <!-- End Pricing -->
@@ -340,19 +355,26 @@
         <div class="card">
           <!-- Header -->
           <header class="card-body pt-6">
-            <h4>Enterprises</h4>
+
+          <img class="empresas-imagem" src="{{URL::asset('img/1920x1080/enterprise.png')}}" class="img-fluid" alt="">
+          <h5 class="empresas-frase">
+          <b>Médias e Grandes  Empresas</b>
+          </h5>
+          <p class="empresas-linha">____________________</p>
+          <small class="d-block text-muted">Receita Anual: > R$ 5 Milhões </small>
+            <!-- <h4>Enterprises</h4>
             <h5 class="h1 text-primary">
               $129
             </h5>
             <p>per active case, per month<br>billed monthly</p>
-            <small class="d-block text-muted">No credit card required. Request a Demo</small>
+            <small class="d-block text-muted">No credit card required. Request a Demo</small> -->
           </header>
           <!-- End Header -->
 
           <!-- Content -->
-          <div class="card-footer border-0 pb-6">
+          <!-- <div class="card-footer border-0 pb-6">
             <button type="button" class="btn btn-sm btn-primary">Start Free Trial</button>
-          </div>
+          </div> -->
           <!-- End Content -->
         </div>
         <!-- End Pricing -->
