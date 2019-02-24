@@ -266,19 +266,18 @@
 
           <!-- Signin Social Buttons -->
           <div class="row mx-gutters-2 mb-4">
-            <div class="col-sm-6 mb-2 mb-sm-0">
-              <button type="button" class="btn btn-block btn-facebook">
+            <div class="col-sm-6 mb-2 mb-sm-0">              
+              <a href="auth/facebook" class="btn btn-block btn-facebook" role="button"> 
                 <span class="fab fa-facebook-f mr-2"></span>
-                <a href="auth/facebook"> Entrar com Facebook </a>
-              
-              </button>
+                Entrar com Facebook 
+              </a>
             </div>
             <div class="col-sm-6">
-              <button type="button" class="btn btn-block btn-twitter">
-                <span class="fab fa-twitter mr-2"></span>
-                Entrar com Twitter
-              </button>
-            </div>
+              <a href="auth/linkedin" class="btn btn-block btn-linkedin" role="button"> 
+                <span class="fab fa-linkedin-in mr-2"></span>
+                Entrar com LinkedIn 
+              </a>
+            </div>      
           </div>
           <!-- End Signin Social Buttons -->
         </div>
@@ -391,16 +390,16 @@
           <!-- Signup Social Buttons -->
           <div class="row mx-gutters-2 mb-4">
             <div class="col-sm-6 mb-2 mb-sm-0">
-              <button type="button" class="btn btn-block btn-facebook">
+            <a href="auth/facebook" class="btn btn-block btn-facebook" role="button"> 
                 <span class="fab fa-facebook-f mr-2"></span>
-                <a href="auth/facebook"> Entrar com Facebook </a>
-              </button>
+                Entrar com Facebook 
+              </a>
             </div>
             <div class="col-sm-6">
-              <button type="button" class="btn btn-block btn-twitter">
-                <span class="fab fa-twitter mr-2"></span>
-                Entrar com Twitter
-              </button>
+              <a href="auth/linkedin" class="btn btn-block btn-linkedin" role="button"> 
+                <span class="fab fa-linkedin-in mr-2"></span>
+                Entrar com LinkedIn 
+              </a>
             </div>
           </div>
           <!-- End Signup Social Buttons -->

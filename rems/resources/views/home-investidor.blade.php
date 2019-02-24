@@ -8,7 +8,7 @@
       <!-- Info -->
       <div class="container text-center space-2 space-3--lg">
         <div class="w-lg-75 mx-lg-auto">
-          <h1 class="text-white font-weight-medium">Uma nova opção de investimento no segmento Imobiliário {{Auth::check()}}</h1>
+          <h1 class="text-white font-weight-medium">Uma nova opção de investimento no segmento Imobiliário</h1>
         </div>
         <div class="w-md-75 w-lg-50 mx-md-auto">
           <div class="mb-5">

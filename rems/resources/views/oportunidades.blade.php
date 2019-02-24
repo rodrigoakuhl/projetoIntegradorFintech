@@ -521,9 +521,7 @@
                                     <span class="account-user-avatar"> 
                                         <img src="{{Auth::user()->photo}}" alt="user-image" class="rounded-circle">
                                     </span>
-                                    <span>
-                                        <span class="account-user-name"> {{ Auth::user()->name }}</span>
-                                    </span>
+                                    <span class="account-user-name"> {{ Auth::user()->name }}</span>
                                 </a>
                                 <div class="dropdown-menu dropdown-menu-right dropdown-menu-animated profile-dropdown ">
                                     <!-- item-->
@@ -534,31 +532,25 @@
                                     <!-- item-->
                                     <a href="javascript:void(0);" class="dropdown-item notify-item">
                                         <i class="mdi mdi-account-circle"></i>
-                                        <span>My Account</span>
+                                        <span>Minha Conta</span>
                                     </a>
 
                                     <!-- item-->
                                     <a href="javascript:void(0);" class="dropdown-item notify-item">
                                         <i class="mdi mdi-account-settings-variant"></i>
-                                        <span>Settings</span>
+                                        <span>Configurações</span>
                                     </a>
 
                                     <!-- item-->
                                     <a href="javascript:void(0);" class="dropdown-item notify-item">
                                         <i class="mdi mdi-lifebuoy"></i>
-                                        <span>Support</span>
+                                        <span>Contato</span>
                                     </a>
 
                                     <!-- item-->
-                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
-                                        <i class="mdi mdi-lock-outline"></i>
-                                        <span>Lock Screen</span>
-                                    </a>
-
-                                    <!-- item-->
-                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                    <a href="/sair" class="dropdown-item notify-item">
                                         <i class="mdi mdi-logout"></i>
-                                        <span>Logout</span>
+                                        <span>Sair</span>
                                     </a>
 
                                 </div>
@@ -626,10 +618,20 @@
                                                         <td> {{ $oportunidade->id }} </td>
                                                         <td> {{ $oportunidade->rate }} </td>
                                                         <td> {{  'R$ '.number_format($oportunidade->requested_amount, 2, ',', '.') }} </td>
-                                                        <td> {{ $oportunidade->duration }} </td>
-                                                        <td> {{  number_format($oportunidade->return_rate, 2, ',', '.').'%' }} </td>
+                                                        <td> {{ $oportunidade->duration.' meses' }} </td>
+                                                        <td> {{  number_format($oportunidade->return_rate, 2, ',', '.').' a.a.' }} </td>
                                                         <td> {{  number_format($oportunidade->guarantee_percent, 0, ',', '.').'%' }} </td>
-                                                        <td> {{ date( 'd/m/Y' , strtotime($oportunidade->date_end))}} </td>
+                                                        <td> 
+                                                        
+                                                            <!-- {{ date( 'd/m/Y' , strtotime($oportunidade->date_end))}} -->
+                                                            {{ 
+                                                                date_diff(
+                                                                    date_create(date("Y-m-d")), 
+                                                                    date_create($oportunidade->date_end)
+                                                                )->format("%a").' dias'  
+                                                            }}
+                                                        
+                                                        </td>
                                                         <td>
                                                             <div class="progress progress-sm">
                                                                 <div class="progress-bar progress-lg bg-success" role="progressbar" style="width: {{ $oportunidade->funding_completed }}%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>

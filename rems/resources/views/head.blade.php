@@ -16,6 +16,7 @@
 
   <!-- CSS Global Compulsory -->
   <link rel="stylesheet" href="{{URL::asset('vendor/bootstrap/css/bootstrap.css')}}">
+  <link rel="stylesheet" href="{{URL::asset('vendor/bootstrap/css/bootstrap-social.css')}}">
 
   <!-- CSS Implementing Plugins -->
   <link rel="stylesheet" href="{{URL::asset('vendor/font-awesome/css/all.min.css')}}">
