@@ -14,6 +14,10 @@
         <link href="{{URL::asset('dash/assets/css/app.min.css')}}" rel="stylesheet" type="text/css" />
         <link rel="stylesheet" href="{{URL::asset('css/specific-styles.css')}}">
 
+        <!-- App js -->
+        <script src="{{URL::asset('dash/assets/js/app.min.js')}}" defer></script>
+        <script src="{{URL::asset('js/main.js')}}" defer></script>
+
     </head>
 
     <body>
@@ -734,8 +738,5 @@
         </div>
         <!-- /Right-bar -->
 
-
-        <!-- App js -->
-        <script src="{{URL::asset('dash/assets/js/app.min.js')}}"></script>
     </body>
 </html>
