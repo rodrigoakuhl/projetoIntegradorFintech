@@ -7,6 +7,7 @@ use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Auth;
 use Socialite;
 use App\User;
+use App\ClientInformation;
 
 class LoginController extends Controller
 {
@@ -77,6 +78,10 @@ class LoginController extends Controller
         $authUser->password = '1';
         $authUser->photo = $user->avatar;
         $authUser->save();
+        $cadastro = new ClientInformation;
+        $cadastro->user_id = $authUser->id;
+        $cadastro->name = $authUser->name;
+        $cadastro->save();
         return $authUser;
 
 //************************************************************************** */

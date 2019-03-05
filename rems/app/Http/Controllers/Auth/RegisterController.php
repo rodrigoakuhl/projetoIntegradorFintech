@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Auth;
 
 use App\User;
+use App\ClientInformation;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
@@ -77,8 +78,13 @@ class RegisterController extends Controller
     {
         $this->validator($request->all())->validate();
         event(new Registered($user = $this->create($request->all())));
+        $cadastro = new ClientInformation;
+        $cadastro->user_id = $user->id;
+        $cadastro->name = $user->name;
+        $cadastro->save();
         return $this->registered($request, $user)
             ?: redirect($this->redirectPath());
+        
     }
 
 }

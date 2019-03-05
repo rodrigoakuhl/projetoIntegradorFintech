@@ -1,4 +1,4 @@
-  @extends('layout')
+  @extends('layout_home')
 
   @section('home-investidor')
   <!-- ========== MAIN CONTENT ========== -->

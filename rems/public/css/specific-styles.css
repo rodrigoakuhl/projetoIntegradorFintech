@@ -134,3 +134,16 @@
         font-size: 0.6rem;
     }
 }
+
+.profile-dropdown{
+    width: 250px;
+}
+
+/* .active{
+    background-color: #39afd1;
+} */
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #39afd1;
+}

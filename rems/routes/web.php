@@ -18,6 +18,8 @@ Route::get('/emprestimos', 'PaginaInicialController@showEmprestimosHome');
 
 
 Route::get('dashboard/oportunidades', 'OportunidadeController@exibirOportunidades');
+Route::get('dashboard/cadastro', 'CadastroController@exibirCadastro');
+Route::post('dashboard/cadastro', 'CadastroController@salvarCadastro');
 
 Auth::routes();
 
