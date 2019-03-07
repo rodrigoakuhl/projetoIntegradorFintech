@@ -4,7 +4,8 @@
 
 <h4 class="header-title mb-3">Edite suas informações</h4>
 
-<form>
+<form id="formCadastro" action="/dashboard/cadastro" method="POST">
+@csrf
     <div id="progressbarwizard">
 
         <ul class="nav nav-pills bg-light nav-justified form-wizard-header mb-3">
@@ -58,13 +59,13 @@
                         <div class="form-group row mb-1">
                             <label class="col-md-1 col-form-label" for="name">Nome</label>
                             <div class="col-md-9">
-                                <input type="text" class="form-control" id="name" name="name" value="{{ Auth::user()->name }}">
+                                <input type="text" class="form-control" id="name" name="name" value="{{ $cadastro->name }}">
                             </div>
                         </div>
                         <div class="form-group row mb-3">
                             <label class="col-md-1 col-form-label" for="gender"> Sexo</label>
                             <div class="col-md-9">
-                            <select name = "gender" class="form-control">
+                            <select name="gender" class="form-control">
                                 <option value = "none" selected></option>
                                 <option value = "male">Masculino</option>
                                 <option value = "female">Feminino</option>
@@ -76,7 +77,7 @@
                         <div class="form-group row mb-3">
                             <label class="col-md-1 col-form-label" for="email">Email</label>
                             <div class="col-md-9">
-                                <input type="text" id="email" name="email" class="form-control" value="{{ Auth::user()->email }}">
+                                <input type="text" id="email" name="email" class="form-control" value="{{ $cadastro->usuario->email }}">
                             </div>
                         </div>
                         <div class="form-group row mb-3">
@@ -353,24 +354,20 @@
                             </div>
                         </div>
                     </div> <!-- end col -->
+                </div> <!-- end row -->    
+            </div>
+            <div class="tab-pane" id="documents">
+                <div class="row">
+                    <div class="col-12">
+                    
+                    </div> <!-- end col -->
                 </div> <!-- end row -->
             </div>
             <div class="tab-pane" id="finish">
-                <div class="row">
+                <div class="row" style="margin-left: 20%;">
                     <div class="col-12">
-                        <div class="text-center">
-                            <h2 class="mt-0"><i class="mdi mdi-check-all"></i></h2>
-                            <h3 class="mt-0">Thank you !</h3>
-
-                            <p class="w-75 mb-2 mx-auto">Quisque nec turpis at urna dictum luctus. Suspendisse convallis dignissim eros at volutpat. In egestas mattis dui. Aliquam
-                                mattis dictum aliquet.</p>
-
-                            <div class="mb-3">
-                                <div class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input" id="customCheck3">
-                                    <label class="custom-control-label" for="customCheck3">I agree with the Terms and Conditions</label>
-                                </div>
-                            </div>
+                        <div class="col-md-6">
+                            <button type="submit" class="btn btn-block btn-primary">SALVAR</button>
                         </div>
                     </div> <!-- end col -->
                 </div> <!-- end row -->
@@ -378,10 +375,10 @@
 
             <ul class="list-inline mb-0 wizard">
                 <li class="previous list-inline-item">
-                    <a href="#" class="btn btn-info">Anterior</a>
+                    <a href="#" class="btn btn-info" id="btnPrevious">Anterior</a>
                 </li>
                 <li class="next list-inline-item float-right">
-                    <a href="#" class="btn btn-info">Próximo</a>
+                    <a href="#" class="btn btn-info" id="btnNext">Próximo</a>
                 </li>
             </ul>
 

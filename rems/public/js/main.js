@@ -10,9 +10,23 @@
 } */
 
 
+function activePane () {
+	var position
+	navLinks.forEach(function (navlink, index){
+		if(navlink.classList.contains('active')){
+			position = index
+    	}
+	})
+	return position
+}
+
+
+//seletores
 navLinks = progressbarwizard.querySelectorAll('.nav-link')
 tabPanes = progressbarwizard.querySelectorAll('.tab-pane')
 
+
+//eventos
 navLinks.forEach(function (navLink){
     navLink.onclick = function (){
         navLinks.forEach(function (nav){
@@ -26,3 +40,19 @@ navLinks.forEach(function (navLink){
     }
 })
 
+//botões próximo e anterior
+btnNext.onclick = function () {
+    if(activePane() < (navLinks.length-1)){
+        navLinks[activePane()+1].click()
+    }else{
+        navLinks[activePane()].click()
+    }
+}
+
+btnPrevious.onclick = function () {
+    if(activePane() > 0){
+        navLinks[activePane()-1].click()
+    }else{
+        navLinks[activePane()].click()
+    }
+}
