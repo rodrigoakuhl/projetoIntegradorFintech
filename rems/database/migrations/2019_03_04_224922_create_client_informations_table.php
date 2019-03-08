@@ -40,8 +40,8 @@ class CreateClientInformationsTable extends Migration
             $table->string('city')->nullable();
             $table->string('state')->nullable();
             $table->string('country')->nullable();
-            $table->integer('monthly_income')->nullable();
-            $table->integer('total_assets')->nullable();
+            $table->decimal('monthly_income', 11, 2)->nullable();
+            $table->decimal('total_assets', 11, 2)->nullable();
             $table->boolean('person_of_interest')->nullable();
             $table->integer('bank_number')->nullable();
             $table->integer('bank_account_type')->nullable();

@@ -66,7 +66,7 @@
                             <label class="col-md-1 col-form-label" for="gender"> Sexo</label>
                             <div class="col-md-9">
                             <select name="gender" class="form-control">
-                                <option value = "none" selected></option>
+                                <option value = "" selected></option>
                                 <option value = "male">Masculino</option>
                                 <option value = "female">Feminino</option>
                             </select>
@@ -84,6 +84,7 @@
                             <label class="col-md-1 col-form-label" for="marital_status">Estado civil</label>
                             <div class="col-md-9">
                                 <select name = "marital_status" class="form-control">
+                                    <option value = "" selected></option>
                                     <option value="married">Casado(a)</option>
                                     <option value="single">Solteiro(a)</option>
                                     <option value="widowed">Viúvo(a)</option>
@@ -149,6 +150,7 @@
                             <label class="col-md-2 col-form-label" for="id_number_state">Estado do emissor</label>
                             <div class="col-md-1">
                                 <select name="id_number_state" class="form-control">
+                                        <option value = "" selected></option>
                                         <option value="AC">Acre</option>
                                         <option value="AL">Alagoas</option>
                                         <option value="AP">Amapá</option>
@@ -224,6 +226,7 @@
                             <label class="col-md-1 col-form-label" for="state">Estado</label>
                             <div class="col-md-1">
                                 <select name="state" class="form-control">
+                                        <option value = "" selected></option>
                                         <option value="AC">Acre</option>
                                         <option value="AL">Alagoas</option>
                                         <option value="AP">Amapá</option>
