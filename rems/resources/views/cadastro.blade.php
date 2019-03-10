@@ -48,7 +48,7 @@
         </ul>
     
         <div class="tab-content b-0 mb-0">
-    
+            <span>% do Cadastro Concluído</span>
             <div id="bar" class="progress mb-3" style="height: 7px;">
                 <div class="bar progress-bar progress-bar-striped progress-bar-animated bg-success"></div>
             </div>
@@ -65,7 +65,7 @@
                         <div class="form-group row mb-3">
                             <label class="col-md-1 col-form-label" for="gender"> Sexo</label>
                             <div class="col-md-9">
-                            <select name="gender" class="form-control">
+                            <select name="gender" class="form-control" data-option="{{ $cadastro->gender }}">
                                 <option value = "" selected></option>
                                 <option value = "male">Masculino</option>
                                 <option value = "female">Feminino</option>
@@ -83,7 +83,7 @@
                         <div class="form-group row mb-3">
                             <label class="col-md-1 col-form-label" for="marital_status">Estado civil</label>
                             <div class="col-md-9">
-                                <select name = "marital_status" class="form-control">
+                                <select name = "marital_status" class="form-control" data-option="{{ $cadastro->marital_status }}">
                                     <option value = "" selected></option>
                                     <option value="married">Casado(a)</option>
                                     <option value="single">Solteiro(a)</option>
@@ -99,57 +99,57 @@
                         <div class="form-group row mb-3">
                             <label class="col-md-1 col-form-label" for="mother_name">Nome da mãe</label>
                             <div class="col-md-9">
-                                <input type="text" class="form-control" id="mother_name" name="mother_name">
+                                <input type="text" class="form-control" id="mother_name" name="mother_name" value="{{ $cadastro->mother_name }}">
                             </div>
                         </div>
                         <div class="form-group row mb-3">
                             <label class="col-md-1 col-form-label" for="father_name">Nome do pai</label>
                             <div class="col-md-9">
-                                <input type="text" class="form-control" id="father_name" name="father_name">
+                                <input type="text" class="form-control" id="father_name" name="father_name" value="{{ $cadastro->father_name }}">
                             </div>
                         </div>
                         <div class="form-group row mb-3">
                             <label class="col-md-1 col-form-label" for="phone_number_01">Telefone para contato 01</label>
                             <div class="col-md-2">
-                                <input type="text" class="form-control" id="phone_number_01" name="phone_number_01">
+                                <input type="text" class="form-control" id="phone_number_01" name="phone_number_01" value="{{ $cadastro->phone_number_01 }}">
                             </div>
                             <label class="col-md-1 col-form-label" for="phone_number_02">Telefone para contato 02</label>
                             <div class="col-md-2">
-                                <input type="text" class="form-control" id="phone_number_02" name="phone_number_02">
+                                <input type="text" class="form-control" id="phone_number_02" name="phone_number_02" value="{{ $cadastro->phone_number_02 }}">
                             </div>
                         </div>
                         <div class="form-group row mb-3">
                             <label class="col-md-1 col-form-label" for="city_birth">Naturalidade</label>
                             <div class="col-md-3">
-                                <input type="text" class="form-control" id="city_birth" name="city_birth">
+                                <input type="text" class="form-control" id="city_birth" name="city_birth" value="{{ $cadastro->city_birth }}">
                             </div>
                             <label class="col-md-1 col-form-label" for="country_bith">Nacionalidade</label>
                             <div class="col-md-3">
-                                <input type="text" class="form-control" id="country_bith" name="country_bith">
+                                <input type="text" class="form-control" id="country_bith" name="country_bith" value="{{ $cadastro->country_bith }}">
                             </div>
                         </div>
                         <div class="form-group row mb-3">
                             <label class="col-md-1 col-form-label" for="tax_id">CPF</label>
                             <div class="col-md-3">
-                                <input type="text" class="form-control" id="tax_id" name="tax_id">
+                                <input type="text" class="form-control" id="tax_id" name="tax_id" value="{{ $cadastro->tax_id }}">
                             </div>
                             <label class="col-md-2 col-form-label" for="birth_date">Data de nascimento</label>
                             <div class="col-md-3">
-                                <input type="date" class="form-control" id="birth_date" name="birth_date">
+                                <input type="date" class="form-control" id="birth_date" name="birth_date" value="{{ $cadastro->birth_date }}">
                             </div>
                         </div>
                         <div class="form-group row mb-3">
                             <label class="col-md-1 col-form-label" for="id_number">RG</label>
                             <div class="col-md-2">
-                                <input type="text" class="form-control" id="id_number" name="id_number">
+                                <input type="text" class="form-control" id="id_number" name="id_number" value="{{ $cadastro->id_number }}">
                             </div>
                             <label class="col-md-2 col-form-label" for="id_number_issuer">Orgão emissor</label>
-                            <div class="col-md-2">
-                                <input type="text" class="form-control" id="id_number_issuer" name="id_number_issuer">
+                            <div class="col-md-1">
+                                <input type="text" class="form-control" id="id_number_issuer" name="id_number_issuer" value="{{ $cadastro->id_number_issuer }}">
                             </div>
                             <label class="col-md-2 col-form-label" for="id_number_state">Estado do emissor</label>
-                            <div class="col-md-1">
-                                <select name="id_number_state" class="form-control">
+                            <div class="col-md-2">
+                                <select name="id_number_state" class="form-control" data-option="{{ $cadastro->id_number_state }}">
                                         <option value = "" selected></option>
                                         <option value="AC">Acre</option>
                                         <option value="AL">Alagoas</option>
@@ -184,7 +184,7 @@
                         <div class="form-group row mb-3">
                         <label class="col-md-2 col-form-label" for="id_number_issue_date">Data de emissão</label>
                             <div class="col-md-3">
-                                <input type="date" class="form-control" id="id_number_issue_date" name="id_number_issue_date">
+                                <input type="date" class="form-control" id="id_number_issue_date" name="id_number_issue_date" value="{{ $cadastro->id_number_issue_date }}">
                             </div>
                         </div>
                     </div> <!-- end col -->
@@ -197,35 +197,35 @@
                         <div class="form-group row mb-3">
                             <label class="col-md-1 col-form-label" for="zip_code">CEP</label>
                             <div class="col-md-2">
-                                <input type="text" class="form-control" id="zip_code" name="zip_code">
+                                <input type="text" class="form-control" id="zip_code" name="zip_code" value="{{ $cadastro->zip_code }}">
                             </div>
                             <label class="col-md-1 col-form-label" for="street_name">Endereço</label>
                             <div class="col-md-6">
-                                <input type="text" class="form-control" id="street_name" name="street_name">
+                                <input type="text" class="form-control" id="street_name" name="street_name" value="{{ $cadastro->street_name }}">
                             </div>
                         </div>
                         <div class="form-group row mb-3">
                             <label class="col-md-1 col-form-label" for="street_number">Número</label>
                             <div class="col-md-2">
-                                <input type="text" class="form-control" id="street_number" name="street_number">
+                                <input type="text" class="form-control" id="street_number" name="street_number" value="{{ $cadastro->street_number }}">
                             </div>
                             <label class="col-md-1 col-form-label" for="street_name">Complemento</label>
                             <div class="col-md-6">
-                                <input type="text" class="form-control" id="street_name" name="street_name">
+                                <input type="text" class="form-control" id="street_name" name="street_name" value="{{ $cadastro->street_name }}">
                             </div>
                         </div>
                         <div class="form-group row mb-3">
                             <label class="col-md-1 col-form-label" for="neighborhood">Bairro</label>
                             <div class="col-md-2">
-                                <input type="text" class="form-control" id="neighborhood" name="neighborhood">
+                                <input type="text" class="form-control" id="neighborhood" name="neighborhood" value="{{ $cadastro->neighborhood }}">
                             </div>
                             <label class="col-md-1 col-form-label" for="city">Cidade</label>
                             <div class="col-md-3">
-                                <input type="text" class="form-control" id="city" name="city">
+                                <input type="text" class="form-control" id="city" name="city" value="{{ $cadastro->city }}">
                             </div>
                             <label class="col-md-1 col-form-label" for="state">Estado</label>
-                            <div class="col-md-1">
-                                <select name="state" class="form-control">
+                            <div class="col-md-2">
+                                <select name="state" class="form-control" data-option="{{ $cadastro->state }}">
                                         <option value = "" selected></option>
                                         <option value="AC">Acre</option>
                                         <option value="AL">Alagoas</option>
@@ -260,7 +260,7 @@
                         <div class="form-group row mb-3">
                             <label class="col-md-1 col-form-label" for="country">País</label>
                             <div class="col-md-2">
-                                <input type="text" class="form-control" id="country" name="country">
+                                <input type="text" class="form-control" id="country" name="country" value="{{ $cadastro->country }}">
                             </div>
                         </div>
                     </div> <!-- end col -->
@@ -272,20 +272,20 @@
                         <div class="form-group row mb-3">
                             <label class="col-md-2 col-form-label" for="monthly_income">Renda mensal aprox. (R$)</label>
                             <div class="col-md-2">
-                                <input type="number" class="form-control" id="monthly_income" name="monthly_income">
+                                <input type="text" class="form-control" id="monthly_income" name="monthly_income" value="{{ $cadastro->monthly_income }}">
                             </div>
                             <label class="col-md-2 col-form-label" for="total_assets">Patrimônio aprox. (R$)</label>
                             <div class="col-md-5">
-                                <input type="number" class="form-control" id="total_assets" name="total_assets">
+                                <input type="text" class="form-control" id="total_assets" name="total_assets" value="{{ $cadastro->total_assets }}">
                             </div>
                         </div>
                         <div class="form-group row mb-3">
                             <label class="col-md-4 col-form-label" for="person_of_interest">DECLARA PODER SER CLASSIFICADO(S) COMO PESSOA EXPOSTA POLITICAMENTE ("PEP")?</label>
                             <div class="col-md-1">
-                                <select class="form-control" id="person_of_interest" name="person_of_interest">
+                                <select class="form-control" name="person_of_interest" data-option="{{ $cadastro->person_of_interest }}">
                                     <option value=""></option>
-                                    <option value="YES">NÃO</option>
-                                    <option value="NO">SIM</option>
+                                    <option value="0">NÃO</option>
+                                    <option value="1">SIM</option>
                                 </select>
                             </div>
                         </div>
@@ -298,7 +298,7 @@
                         <div class="form-group row mb-3">
                             <label class="col-md-1 col-form-label" for="bank_number">Banco</label>
                             <div class="col-md-2">
-                                <select name="bank_number" class="form-control">
+                                <select name="bank_number" class="form-control" data-option="{{ $cadastro->bank_number }}">
                                     <option value=""></option>
                                     <option value="3">Banco do Brasil</option>
                                     <option value="33">Banco da Amazônia S.A.</option>
@@ -339,7 +339,7 @@
                             </div>
                             <label class="col-md-1 col-form-label" for="bank_account_type">Tipo de conta</label>
                             <div class="col-md-6">
-                                <select class="form-control" name="bank_account_type">
+                                <select class="form-control" name="bank_account_type" data-option="{{ $cadastro->bank_account_type }}">
                                     <option value=""></option>
                                     <option value="current">Conta Corrente</option>
                                     <option value="saving">Poupança</option>
@@ -349,11 +349,11 @@
                         <div class="form-group row mb-3">
                             <label class="col-md-1 col-form-label" for="bank_branch_number">Número da agência</label>
                             <div class="col-md-2">
-                                <input type="text" class="form-control" id="bank_branch_number" name="bank_branch_number">
+                                <input type="text" class="form-control" id="bank_branch_number" name="bank_branch_number" value="{{ $cadastro->bank_branch_number }}">
                             </div>
                             <label class="col-md-1 col-form-label" for="account_number">Número da conta</label>
                             <div class="col-md-6">
-                                <input type="text" class="form-control" id="account_number" name="account_number">
+                                <input type="text" class="form-control" id="account_number" name="account_number" value="{{ $cadastro->account_number }}">
                             </div>
                         </div>
                     </div> <!-- end col -->

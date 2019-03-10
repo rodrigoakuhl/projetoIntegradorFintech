@@ -32,7 +32,7 @@ class CreateClientInformationsTable extends Migration
             $table->string('id_number_issuer')->nullable();
             $table->string('id_number_state')->nullable();
             $table->date('id_number_issue_date')->nullable();
-            $table->integer('zip_code')->nullable();
+            $table->string('zip_code')->nullable();
             $table->string('street_name')->nullable();
             $table->integer('street_number')->nullable();
             $table->string('street_additional_information')->nullable();
@@ -40,13 +40,13 @@ class CreateClientInformationsTable extends Migration
             $table->string('city')->nullable();
             $table->string('state')->nullable();
             $table->string('country')->nullable();
-            $table->decimal('monthly_income', 11, 2)->nullable();
-            $table->decimal('total_assets', 11, 2)->nullable();
+            $table->decimal('monthly_income', 30, 2)->nullable();
+            $table->decimal('total_assets', 30, 2)->nullable();
             $table->boolean('person_of_interest')->nullable();
             $table->integer('bank_number')->nullable();
-            $table->integer('bank_account_type')->nullable();
+            $table->string('bank_account_type')->nullable();
             $table->integer('bank_branch_number')->nullable();
-            $table->string('account_number')->nullable();
+            $table->integer('account_number')->nullable();
 
             $table->timestamps();
         });
