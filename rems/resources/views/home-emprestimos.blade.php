@@ -4,7 +4,7 @@
   <!-- ========== MAIN CONTENT ========== -->
   <main id="content" role="main">
     <!-- Hero Section -->
-    <div class="gradient-overlay-half-purple-v1 bg-img-hero-center" style="background-image: url({{URL::asset('img/1920x1080/predios2.jpg);')}}">
+    <div class="gradient-overlay-half-purple-v1 bg-img-hero-center" style="background-image: url({{URL::asset('img/1920x1080/investidor-fundo.jpg);')}}">
       <!-- Info -->
       <div class="container text-center space-2 space-3--lg">
         <div class="w-lg-75 mx-lg-auto">
@@ -380,9 +380,9 @@
         <!-- End Pricing -->
       </div>
 
-      <div class="w-lg-60 text-center mx-lg-auto">
+      <!-- <div class="w-lg-60 text-center mx-lg-auto">
         <p>If you are interested in plans for more than 1,000 cases, please shoot us an email at <a href="#mailto:support@htmlstream.com">support@htmlstream.com</a> for custom pricing.</p>
-      </div>
+      </div> -->
     </div>
     <!-- End Pricing Section -->
 
