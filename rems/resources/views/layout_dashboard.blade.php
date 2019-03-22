@@ -46,10 +46,17 @@
                         <li class="side-nav-title side-nav-item">Navigation</li>
 
                         <li class="side-nav-item">
-                            <a href="index.html" class="side-nav-link">
+                            <a href="/dashboard/oportunidades" class="side-nav-link">
                                 <i class="dripicons-jewel"></i>
                                 <!-- <span class="badge badge-success float-right">7</span> -->
                                 <span> Oportunidades </span>
+                            </a>
+                        </li>
+                        <li class="side-nav-item">
+                            <a href="/dashboard/cadastro" class="side-nav-link">
+                                <i class="dripicons-user"></i>
+                                <!-- <span class="badge badge-success float-right">7</span> -->
+                                <span> Minha Conta </span>
                             </a>
                         </li>
 <!-- 

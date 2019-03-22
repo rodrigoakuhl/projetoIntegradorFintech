@@ -35,7 +35,7 @@
                                     <th>Garantia</th>
                                     <th>Término</th>
                                     <th>%Levantado</th>
-                                    <th>Ações</th>
+                                    <th style="text-align: center;">Ações</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -64,7 +64,20 @@
                                         </div>
                                         {{  number_format($oportunidade->funding_completed, 0, ',', '.').'%' }}
                                     </td>
-                                    <td>{{ $oportunidade->status }}</td>
+                                    <td>
+                                        @if($oportunidade->status)
+                                            <a href="/dashboard/oportunidade-investir" class="btn btn-block btn-success" role="button">
+                                                Investir
+                                            </a>
+                                        @else
+                                            <button href="#" disabled class="btn btn-block btn-success" role="button">
+                                                Encerrado
+                                            </button>
+                                        @endif
+                                        <a href="/dashboard/oportunidade-detalhe" class="btn btn-block btn-secondary" role="button">
+                                            Detalhes
+                                        </a>
+                                    </td>
                                 </tr>
                                 @endforeach
                             </tbody>

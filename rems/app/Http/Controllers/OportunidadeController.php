@@ -14,4 +14,8 @@ class OportunidadeController extends Controller
         // return view('oportunidades');
 
     }
+
+    public function exibirDetalhe(){
+        return view('oportunidades-detalhes');
+    }
 }
