@@ -18,7 +18,7 @@ Route::get('/emprestimos', 'PaginaInicialController@showEmprestimosHome');
 
 
 Route::get('dashboard/oportunidades', 'OportunidadeController@exibirOportunidades');
-Route::get('dashboard/oportunidade-detalhe', 'OportunidadeController@exibirDetalhe');
+Route::get('dashboard/oportunidade-detalhe/{id}', 'OportunidadeController@exibirDetalhe');
 Route::get('dashboard/cadastro', 'CadastroController@exibirCadastro');
 Route::post('dashboard/cadastro', 'CadastroController@salvarCadastro');
 

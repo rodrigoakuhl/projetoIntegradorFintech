@@ -74,7 +74,7 @@
                                                 Encerrado
                                             </button>
                                         @endif
-                                        <a href="/dashboard/oportunidade-detalhe" class="btn btn-block btn-secondary" role="button">
+                                        <a href="/dashboard/oportunidade-detalhe/{{ $oportunidade->id }}" class="btn btn-block btn-secondary" role="button">
                                             Detalhes
                                         </a>
                                     </td>

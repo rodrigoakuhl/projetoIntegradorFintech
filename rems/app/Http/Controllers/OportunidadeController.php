@@ -15,7 +15,9 @@ class OportunidadeController extends Controller
 
     }
 
-    public function exibirDetalhe(){
-        return view('oportunidades-detalhes');
+    public function exibirDetalhe($id){
+        $oportunidade = Opportunity::find($id);
+        
+        return view('oportunidades-detalhes')->with('oportunidade', $oportunidade);
     }
 }
