@@ -32,7 +32,7 @@
                             </div>
                             <div class="modal-body">
                                 <div class="mt-4">
-                                        <div class="row">
+                                        <div class="row justify-content-md-center">
                                             <div class="col-md-2">
                                                 <h6 class="font-14">Cidade/UF</h6>
                                                 <p class="text-sm lh-150">{{ $oportunidade->city }} / {{ $oportunidade->state }}</p>
@@ -47,7 +47,7 @@
                                             </div>
                                         </div>
                                 </div>
-                                <div class="row">
+                                <div class="row justify-content-md-center">
                                     <div class="col-xl-2 col-lg-6">
                                         <div class="card widget-flat bg-primary">
                                             <div class="card-body">
@@ -80,6 +80,42 @@
                                                 <h3 class="mt-3 mb-3 text-white">TO DO</h3>
                                             </div>
                                         </div>
+                                    </div>
+                                </div>
+                                <div class="row justify-content-between">
+                                    <div class="col-md-2">
+                                        <h6 class="font-14">Retorno bruto anual</h6>
+                                        <p class="text-sm lh-150">{{  number_format($oportunidade->return_rate, 2, ',', '.').' a.a.' }}</p>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <h6 class="font-14">Levantado {{  number_format($oportunidade->funding_completed, 0, ',', '.').'%' }}</h6>
+                                        <div class="progress" style="height: 20px;">
+                                            <div class="progress-bar bg-success" role="progressbar" style="width: {{ $oportunidade->funding_completed }}%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <h6 class="font-14">Faltam</h6>
+                                        <p class="text-sm lh-150">
+                                            {{  'R$ '.number_format((
+                                                    $oportunidade->requested_amount-(($oportunidade->funding_completed/100)*$oportunidade->requested_amount)
+                                                ), 2, ',', '.')
+                                            }}
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-2 border-bottom">
+                                        <h6 class="font-14">Retorno estimado</h6>
+                                        <p class="text-sm lh-150">{{  number_format(($oportunidade->return_rate/6.5)*100, 2, ',', '.').'% do CDI' }}</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-2 mt-1">
+                                        <p class="text-sm lh-150">
+                                        
+                                            <b>Nota:</b> Assim que realizar o investimento e o valor atingir 100% da captação, você receberá as instruções por e-mail
+
+                                        </p>
                                     </div>
                                 </div>
                             </div>
