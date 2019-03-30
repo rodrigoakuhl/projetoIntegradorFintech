@@ -83,7 +83,7 @@
                                     </div>
                                 </div>
                                 <div class="row justify-content-between">
-                                    <div class="col-md-2">
+                                    <div class="col-md-2 border-bottom">
                                         <h6 class="font-14">Retorno bruto anual</h6>
                                         <p class="text-sm lh-150">{{  number_format($oportunidade->return_rate, 2, ',', '.').' a.a.' }}</p>
                                     </div>
@@ -117,11 +117,18 @@
 
                                         </p>
                                     </div>
+                                    <div class="col-md-2"></div>
+                                    <div class="col-md-3">
+                                        <input type="text" placeholder="Investimento de R$1.000,00 a 10.000,00" class="form-control" data-toggle="input-mask" data-mask-format="000.000.000.000.000,00" data-reverse="true" maxlength="22">
+                                    </div>                            
+                                    <div class="col-md-5">
+                                        <a role="button" class="btn btn-success btn-rounded btn-lg btn-block" href="#" style="width: 20%;">Investir</a>
+                                    </div>
                                 </div>
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Save changes</button>
+                                <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
                             </div>
                         </div><!-- /.modal-content -->
                     </div><!-- /.modal-dialog -->
