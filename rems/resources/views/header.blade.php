@@ -623,9 +623,15 @@
                    data-modal-target="#signupModal"
                    data-overlay-color="#151b26">
                   <span class="fa fa-user-circle mr-1"></span>
-                  Login
+                  Cadastrar & Login
                 </a>
               </li>
+
+
+
+              
+
+
               <!-- End Button -->
 
               <!-- Search -->
