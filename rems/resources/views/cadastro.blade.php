@@ -4,7 +4,7 @@
 
 <h4 class="header-title mb-3">Edite suas informações</h4>
 
-<form id="formCadastro" action="/dashboard/cadastro" method="POST">
+<form id="formCadastro" action="/dashboard/cadastro" method="POST" enctype="multipart/form-data">
 @csrf
     <div id="progressbarwizard">
 
@@ -362,7 +362,24 @@
             <div class="tab-pane" id="documents">
                 <div class="row">
                     <div class="col-12">
-                    
+                        <div class="custom-file row mb-3">
+                            <label class="custom-file-label col-md-9" for="document_tax_id">DOCUMENTO DE IDENTIDADE - CNH OU RG (OBRIGATÓRIO)</label>
+                            <div class="col-md-9">
+                                <input type="file" class="custom-file-input" id="document_tax_id" name="document_tax_id">
+                            </div>
+                        </div>
+                        <div class="custom-file row mb-3">
+                            <label class="custom-file-label col-md-9" for="document_tax_id_side">VERSO DO DOCUMENTO DE IDENTIDADE (SE FOR NECESSÁRIO)</label>
+                            <div class="col-md-9">
+                                <input type="file" class="custom-file-input" id="document_tax_id_side" name="document_tax_id_side">
+                            </div>
+                        </div>
+                        <div class="custom-file row mb-3">
+                            <label class="custom-file-label col-md-9" for="document_address">COMPROVANTE DE RESIDÊNCIA (OBRIGATÓRIO)</label>
+                            <div class="col-md-2">
+                                <input type="file" class="custom-file-input" id="document_address" name="document_address">
+                            </div>
+                        </div>
                     </div> <!-- end col -->
                 </div> <!-- end row -->
             </div>
