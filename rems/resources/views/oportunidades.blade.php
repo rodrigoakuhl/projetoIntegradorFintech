@@ -39,11 +39,26 @@
                                             </div>
                                             <div class="col-md-2">
                                                 <h6 class="font-14">Taxa de Juros:</h6>
-                                                <p class="text-sm lh-150">{{  number_format(($oportunidade->return_rate/12), 2, ',', '.').'% a.m.' }}</p>
+                                                <p class="text-sm lh-150">{{  number_format(($oportunidade->return_rate), 2, ',', '.').'% a.m.' }}</p>
                                             </div>
                                             <div class="col-md-2">
                                                 <h6 class="font-14">Valor da parcela:</h6>
-                                                <p class="text-sm lh-150">TO DO</p>
+                                                <p class="text-sm lh-150">
+                                                
+                                                {{ 
+                                                    
+                                                    number_format(
+                                                    Round(
+                                                        Price(
+                                                            $oportunidade->requested_amount, 
+                                                            $oportunidade->duration, 
+                                                            $oportunidade->return_rate)
+                                                    , 2), 2, ',', '.')
+                                                 }}
+                                                
+                                                
+                                                
+                                                </p>
                                             </div>
                                         </div>
                                 </div>
@@ -77,15 +92,29 @@
                                                     <i class="mdi mdi-currency-usd widget-icon bg-primary-lighten rounded-circle text-primary"></i>
                                                 </div>
                                                 <h5 class="text-light font-weight-normal mt-0" title="Revenue">Valor total do empréstimo</h5>
-                                                <h3 class="mt-3 mb-3 text-white">TO DO</h3>
+                                                <h3 class="mt-3 mb-3 text-white">
+                                                
+                                                {{ 
+                                                    
+                                                    number_format(
+                                                    Round(
+                                                        Price(
+                                                            $oportunidade->requested_amount, 
+                                                            $oportunidade->duration, 
+                                                            $oportunidade->return_rate)
+                                                    , 2)*$oportunidade->duration, 2, ',', '.')
+                                                 }}
+                                                
+                                                
+                                                </h3>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row justify-content-between">
-                                    <div class="col-md-2">
+                                    <div class="col-md-2 border-bottom">
                                         <h6 class="font-14">Retorno bruto anual</h6>
-                                        <p class="text-sm lh-150">{{  number_format($oportunidade->return_rate, 2, ',', '.').' a.a.' }}</p>
+                                        <p class="text-sm lh-150">{{  number_format($oportunidade->return_rate, 2, ',', '.').' a.m.' }}</p>
                                     </div>
                                     <div class="col-md-5">
                                         <h6 class="font-14">Levantado {{  number_format($oportunidade->funding_completed, 0, ',', '.').'%' }}</h6>
@@ -106,7 +135,7 @@
                                 <div class="row">
                                     <div class="col-md-2 border-bottom">
                                         <h6 class="font-14">Retorno estimado</h6>
-                                        <p class="text-sm lh-150">{{  number_format(($oportunidade->return_rate/6.5)*100, 2, ',', '.').'% do CDI' }}</p>
+                                        <p class="text-sm lh-150">{{  number_format(($oportunidade->return_rate/(6.5/12))*100, 2, ',', '.').'% do CDI' }}</p>
                                     </div>
                                 </div>
                                 <div class="row">
@@ -117,11 +146,22 @@
 
                                         </p>
                                     </div>
+                                    <div class="col-md-2"></div>
+                                    <div class="col-md-3">
+                                        <form id="oportunidadeInvestir" action="/dashboard/investir" method="POST">
+                                        @csrf    
+                                            <input type="text" name="amount" placeholder="Investimento de R$1.000,00 a 10.000,00" class="form-control" data-toggle="input-mask" data-mask-format="000.000.000.000.000,00" data-reverse="true" maxlength="22">
+                                            <input type="hidden" name="oportunity" value="{{ $oportunidade->id }}">
+                                        </form>    
+                                    </div>                            
+                                    <div class="col-md-5">
+                                        <a role="button" class="btnInvestir btn btn-success btn-rounded btn-lg btn-block" href="#" style="width: 20%;">Investir</a>
+                                    </div>
                                 </div>
                             </div>
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Save changes</button>
+                                <button type="button" class="btn btn-light" data-dismiss="modal">Cancelar</button>
+                                <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
                             </div>
                         </div><!-- /.modal-content -->
                     </div><!-- /.modal-dialog -->
@@ -149,7 +189,7 @@
                                     <td> {{ $oportunidade->rate }} </td>
                                     <td> {{  'R$ '.number_format($oportunidade->requested_amount, 2, ',', '.') }} </td>
                                     <td> {{ $oportunidade->duration.' meses' }} </td>
-                                    <td> {{  number_format($oportunidade->return_rate, 2, ',', '.').' a.a.' }} </td>
+                                    <td> {{  number_format($oportunidade->return_rate, 2, ',', '.').'% a.m.' }} </td>
                                     <td> {{  number_format($oportunidade->guarantee_percent, 0, ',', '.').'%' }} </td>
                                     <td> 
                                     

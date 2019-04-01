@@ -30,6 +30,7 @@ class ComposerStaticInitd62b1b35b6780e6db2c7d0ea6dcf23d8
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
         '801c31d8ed748cfa537fa45402288c95' => __DIR__ . '/..' . '/psy/psysh/src/functions.php',
         '0d8253363903f0ac7b0978dcde4e28a0' => __DIR__ . '/..' . '/beyondcode/laravel-dump-server/helpers.php',
+        'b4e3f29b106af37a2bb239f73cdf68c7' => __DIR__ . '/../..' . '/app/helpers.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -441,6 +442,7 @@ class ComposerStaticInitd62b1b35b6780e6db2c7d0ea6dcf23d8
         'App\\Http\\Controllers\\CadastroController' => __DIR__ . '/../..' . '/app/Http/Controllers/CadastroController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
         'App\\Http\\Controllers\\HomeController' => __DIR__ . '/../..' . '/app/Http/Controllers/HomeController.php',
+        'App\\Http\\Controllers\\InvestimentoController' => __DIR__ . '/../..' . '/app/Http/Controllers/InvestimentoController.php',
         'App\\Http\\Controllers\\OportunidadeController' => __DIR__ . '/../..' . '/app/Http/Controllers/OportunidadeController.php',
         'App\\Http\\Controllers\\PaginaInicialController' => __DIR__ . '/../..' . '/app/Http/Controllers/PaginaInicialController.php',
         'App\\Http\\Controllers\\UsuariosController' => __DIR__ . '/../..' . '/app/Http/Controllers/UsuariosController.php',
@@ -452,6 +454,7 @@ class ComposerStaticInitd62b1b35b6780e6db2c7d0ea6dcf23d8
         'App\\Http\\Middleware\\TrimStrings' => __DIR__ . '/../..' . '/app/Http/Middleware/TrimStrings.php',
         'App\\Http\\Middleware\\TrustProxies' => __DIR__ . '/../..' . '/app/Http/Middleware/TrustProxies.php',
         'App\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
+        'App\\Operation' => __DIR__ . '/../..' . '/app/Operation.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
         'App\\Providers\\AuthServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AuthServiceProvider.php',
         'App\\Providers\\BroadcastServiceProvider' => __DIR__ . '/../..' . '/app/Providers/BroadcastServiceProvider.php',

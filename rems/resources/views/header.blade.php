@@ -619,7 +619,7 @@
 
               <!-- Button -->
               <li class="nav-item u-header__nav-item-btn nav-item-margin">
-                <a class="btn btn-sm btn-primary" href="#signupModal" role="button"
+                <a id="btnCadastrarLogin" class="btn btn-sm btn-primary" href="#signupModal" role="button"
                    data-modal-target="#signupModal"
                    data-overlay-color="#151b26">
                   <span class="fa fa-user-circle mr-1"></span>

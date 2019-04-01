@@ -221,6 +221,17 @@
                      data-success-class="u-has-success">
             </div>
           </div>
+          @if($errors->any())
+                @foreach($errors->all() as $error)
+                  <div class="row mb-3">
+                    <div class="col-12">
+                      <div id="errorMsg" class="alert alert-danger text-center" role="alert">
+                        {{ $error }}
+                      </div>
+                    </div>
+                  </div>                  
+                @endforeach
+          @endif
           <!-- End Input -->
             
           <div class="row mb-3">

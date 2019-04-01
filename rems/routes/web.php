@@ -21,6 +21,9 @@ Route::get('dashboard/oportunidades', 'OportunidadeController@exibirOportunidade
 Route::get('dashboard/oportunidade-detalhe/{id}', 'OportunidadeController@exibirDetalhe');
 Route::get('dashboard/cadastro', 'CadastroController@exibirCadastro');
 Route::post('dashboard/cadastro', 'CadastroController@salvarCadastro');
+Route::get('dashboard/investimentos', 'InvestimentoController@exibirInvestimento');
+Route::post('dashboard/investir', 'InvestimentoController@investir');
+Route::get('dashboard/investimento-cancelar/{id}', 'InvestimentoController@cancelarInvestimento');
 
 Auth::routes();
 // Auth::get('/home', 'HomeController@index');
