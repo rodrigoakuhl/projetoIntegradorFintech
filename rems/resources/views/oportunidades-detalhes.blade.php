@@ -21,15 +21,15 @@
                         <div class="col-lg-5">
                             <!-- Product image -->
                             <a href="javascript: void(0);" class="text-center d-block mb-4">
-                                <img src="{{URL::asset('dash/assets/images/detalhes-picture-01-company-'.$oportunidade->id.'.jpg')}}" class="img-fluid" style="max-width: 480px;" alt="Product-img">
+                                <img src="{{URL::asset('dash/assets/images/detalhes-picture-01-company-'.$oportunidade->id.'.jpg')}}" class="img-fluid" style="max-width: 380px;" alt="Product-img">
                             </a>
 
                             <div class="d-lg-flex d-none justify-content-center">
                                 <a href="javascript: void(0);">
-                                    <img src="{{URL::asset('dash/assets/images/detalhes-picture-01-company-'.$oportunidade->id.'.jpg')}}" class="img-fluid img-thumbnail p-2" style="max-width: 150px;" alt="Product-img">
+                                    <img src="{{URL::asset('dash/assets/images/detalhes-picture-01-company-'.$oportunidade->id.'.jpg')}}" class="img-fluid img-thumbnail p-2" style="max-width: 110px;" alt="Product-img">
                                 </a>
                                 <a href="javascript: void(0);" class="ml-2">
-                                    <img src="{{URL::asset('dash/assets/images/detalhes-picture-02-company-'.$oportunidade->id.'.jpg')}}" class="img-fluid img-thumbnail p-2" style="max-width: 150px;" alt="Product-img">
+                                    <img src="{{URL::asset('dash/assets/images/detalhes-picture-02-company-'.$oportunidade->id.'.jpg')}}" class="img-fluid img-thumbnail p-2" style="max-width: 110px;" alt="Product-img">
                                 </a>
                             </div>
                         </div> <!-- end col -->
