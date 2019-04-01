@@ -76,7 +76,7 @@ class RegisterController extends Controller
         ]);
     }
 
-    public function register(Request $request) {
+    public function registerEmail(Request $request) {
         $input = $request->all();
         $validator = $this->validator($input);
 
@@ -89,7 +89,7 @@ class RegisterController extends Controller
                 $message->to($user['email']);
                 $message->subject('scqq.blogspot.com - Activation Code');
             });
-            return redirect('login')->with('Sucess', "Enviamos um  de cocódigo de ativação via e-mail, por favor conferir!")
+            return redirect('login')->with('Sucess', "Enviamos um  de cocódigo de ativação via e-mail, por favor conferir!");
         }
 
         return back()->with('Erro', $validator->errors());

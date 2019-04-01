@@ -56,9 +56,15 @@ class CadastroController extends Controller
 
         $cadastro->save();
 
-        $request->document_tax_id->store('documentos');
-        $request->document_tax_id_side->store('documentos');
-        $request->document_address->store('documentos');
+        if($request->document_tax_id){
+            $request->document_tax_id->store('documentos');
+        }
+        if($request->document_tax_id_side){
+            $request->document_tax_id_side->store('documentos');
+        }
+        if($request->document_address){
+            $request->document_address->store('documentos');
+        }
 
         return redirect('/dashboard/cadastro/');
     }

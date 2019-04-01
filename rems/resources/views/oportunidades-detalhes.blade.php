@@ -53,7 +53,7 @@
                                 <!-- Product description -->
                                 <div class="mt-4">
                                     <h6 class="font-14">Juros:</h6>
-                                    <h3>{{  number_format($oportunidade->return_rate, 2, ',', '.').' a.a.' }}</h3>
+                                    <h3>{{  number_format($oportunidade->return_rate, 2, ',', '.').'% a.m.' }}</h3>
                                 </div>
 
                                 <div class="mt-4">
