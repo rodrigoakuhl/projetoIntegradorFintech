@@ -298,7 +298,7 @@
           </div>
       </div>
       <!-- End Title -->
-      <h1 class="text-center">Píblico Alvo</h1>
+      <h1 class="text-center">Público Alvo</h1>
       <div class="card-group d-block d-md-flex shadow text-center mb-5">
         <!-- Pricing -->
         

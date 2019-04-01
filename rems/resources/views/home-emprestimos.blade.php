@@ -98,25 +98,27 @@
     <!-- End Divider -->
 
     <!-- Features Section -->
-    <div class="container space-2 space-3--lg">
-      <div class="row justify-content-lg-between">
-        <div class="col-md-6 mb-5 mb-md-0">
-          <div class="pr-md-4">
-            <div class="mb-4">
-              <!-- <span class="u-label u-label--sm u-label--purple mb-3">Monitor</span> -->
-              <!-- <h2 class="h3">Case information on a single page</h2> -->
-              <p class="feature-section-paragraphy">A segurança do capital do investidor é muito importante para nós, e por isso todas as operações possuem Garantias Reais de Imóveis, e passam por uma análise de crédito e aprovação antes da oferta.
-</p>
+    <div class="gradient-overlay-half-purple-v2 bg-img-hero-center">
+      <div class="container space-2 space-3--lg">
+        <div class="row justify-content-lg-between">
+          <div class="col-md-6 mb-5 mb-md-0">
+            <div class="pr-md-4">
+              <div class="mb-4">
+                <!-- <span class="u-label u-label--sm u-label--purple mb-3">Monitor</span> -->
+                <!-- <h2 class="h3">Case information on a single page</h2> -->
+                <p class="feature-section-paragraphy text-dark">A segurança do capital do investidor é muito importante para nós, e por isso todas as operações possuem Garantias Reais de Imóveis, e passam por uma análise de crédito e aprovação antes da oferta.
+                </p>
+              </div>
+  <!--             <a class="btn btn-sm btn-primary btn-wide" href="https://themes.getbootstrap.com/product/space-multipurpose-responsive-template/">
+                Learn More
+                <span class="fa fa-angle-right font-size-14 ml-2"></span>
+              </a> -->
             </div>
-<!--             <a class="btn btn-sm btn-primary btn-wide" href="https://themes.getbootstrap.com/product/space-multipurpose-responsive-template/">
-              Learn More
-              <span class="fa fa-angle-right font-size-14 ml-2"></span>
-            </a> -->
           </div>
-        </div>
 
-        <div class="col-md-6">
-          <object class="img-fluid our-premisses" type="image/jpeg" style="height:50%" data="{{URL::asset('img/house-por-cento.png')}}"></object>
+          <div class="col-md-6">
+            <object class="img-fluid our-premisses" type="image/jpeg" style="height:50%" data="{{URL::asset('img/house-por-cento.png')}}"></object>
+          </div>
         </div>
       </div>
     </div>
@@ -295,10 +297,9 @@
           </div>
       </div>
       <!-- End Title -->
-
+      <h1 class="text-center">Público Alvo</h1>
       <div class="card-group d-block d-md-flex shadow text-center mb-5">
         <!-- Pricing -->
-        <h1 class="text-center">Píblico Alvo</h1>
         <div class="card">
           <!-- Header -->
           <header class="card-body pt-6">
