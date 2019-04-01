@@ -271,7 +271,7 @@
             <!-- <div class="title-what-we-do"> 
               <h2>O QUE FAZEMOS?</h2>
             </div> -->
-            <h1>O QUE FAZEMOS?</h1>
+            <h1>O Que Fazemos?</h1>
             <p>
               Conectamos pessoas e empresas à procura de crédito com investidores e instituições com dinheiro para emprestar.                
             </p>
@@ -298,7 +298,7 @@
           </div>
       </div>
       <!-- End Title -->
-      <h1 class="text-center">PÚBLICO ALVO</h1>
+      <h1 class="text-center">Píblico Alvo</h1>
       <div class="card-group d-block d-md-flex shadow text-center mb-5">
         <!-- Pricing -->
         
@@ -363,7 +363,7 @@
           <!-- Header -->
           <header class="card-body pt-6">
 
-          <img class="empresas-imagem" src="{{URL::asset('img/1920x1080/enterprise.png')}}" class="img-fluid" alt="">
+          <img class="empresas-imagem" src="{{URL::asset('img/1920x1080/enterprise.png')}}" class="img-fluid" alt="" style="height: 90px;">
           <h5 class="empresas-frase">
           <b>Médias e Grandes  Empresas</b>
           </h5>
