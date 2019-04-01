@@ -24,6 +24,7 @@
   <script src="{{URL::asset('js/components/hs.slick-carousel.js')}}"></script>
   <script src="{{URL::asset('js/components/hs.go-to.js')}}"></script>
 
+
   <!-- JS Plugins Init. -->
   <script>
     $(window).on('load', function () {
@@ -79,3 +80,6 @@
       $.HSCore.components.HSGoTo.init('.js-go-to');
     });
   </script>
+
+    <!-- Custom JS -->
+    <script src="{{URL::asset('js/main_home.js')}}" defer></script>

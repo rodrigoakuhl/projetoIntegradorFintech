@@ -17,6 +17,7 @@
         <!-- App js -->
         <script src="{{URL::asset('dash/assets/js/app.min.js')}}" defer></script>
         <script src="{{URL::asset('js/main.js')}}" defer></script>
+        <script src="{{URL::asset('js/investimento.js')}}" defer></script>
 
     </head>
 
@@ -58,6 +59,14 @@
                                 <i class="dripicons-jewel"></i>
                                 <!-- <span class="badge badge-success float-right">7</span> -->
                                 <span> Oportunidades </span>
+                            </a>
+                        </li>
+
+                        <li class="side-nav-item">
+                            <a href="/dashboard/investimentos" class="side-nav-link">
+                                <i class="dripicons-wallet"></i>
+                                <!-- <span class="badge badge-success float-right">7</span> -->
+                                <span> Meus Investimentos </span>
                             </a>
                         </li>
 <!-- 
@@ -579,7 +588,7 @@
                         <button class="button-menu-mobile open-left disable-btn">
                             <i class="mdi mdi-menu"></i>
                         </button>
-                        <div class="app-search">
+                        <!-- <div class="app-search">
                             <form>
                                 <div class="input-group">
                                     <input type="text" class="form-control" placeholder="Search...">
@@ -589,7 +598,7 @@
                                     </div>
                                 </div>
                             </form>
-                        </div>
+                        </div> -->
                     </div>
                     <!-- end Topbar -->
 
