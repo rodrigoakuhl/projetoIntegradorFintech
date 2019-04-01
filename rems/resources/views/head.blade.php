@@ -9,7 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Favicon -->
-  <link rel="shortcut icon" href="../../favicon.ico">
+  <link rel="shortcut icon" href="{{URL::asset('img/ico/REMSICON.ico')}}">
 
   <!-- Google Fonts -->
   <link href="//fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
