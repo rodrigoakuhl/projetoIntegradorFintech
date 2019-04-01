@@ -9,6 +9,8 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
 
+use DB;
+use Mail;
 use Illuminate\Http\Request;
 use Illuminate\Auth\Events\Registered;
 
@@ -72,6 +74,37 @@ class RegisterController extends Controller
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
         ]);
+    }
+
+    public function register(Request $request) {
+        $input = $request->all();
+        $validator = $this->validator($input);
+
+        if($validator->passes()) {
+            $user = $this->create($input)->toArray();
+            $user['link'] = str_random(30);
+
+            DB::table('users_activations')->insert(['id_user'=>$user['id'], 'token'=>$user['link']]);
+            Mail::send('mail.activation', $user, function($message) use($user) {
+                $message->to($user['email']);
+                $message->subject('scqq.blogspot.com - Activation Code');
+            });
+            return redirect('login')->with('Sucess', "Enviamos um  de cocódigo de ativação via e-mail, por favor conferir!")
+        }
+
+        return back()->with('Erro', $validator->errors());
+    }
+
+    public function userActivation($token) {
+        $check = DB::table('users_activations')->where('token, $token')->first();
+        if (!is_null($check)) {
+            return redirect('login')->with('Sucess', "Usuário já ativado");
+        }
+
+        $user->update(['is_activated' => 1]);
+        DB::table('users_activations')->where('token', $token)->delete();
+        return redirect('login')->with('Success', "usuário ativado com sucesso");
+        
     }
 
     public function register(Request $request)

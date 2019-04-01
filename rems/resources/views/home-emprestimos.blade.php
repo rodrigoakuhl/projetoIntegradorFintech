@@ -4,7 +4,7 @@
   <!-- ========== MAIN CONTENT ========== -->
   <main id="content" role="main">
     <!-- Hero Section -->
-    <div class="gradient-overlay-half-purple-v1 bg-img-hero-center" style="background-image: url({{URL::asset('img/1920x1080/predios2.jpg);')}}">
+    <div class="gradient-overlay-half-purple-v1 bg-img-hero-center" style="background-image: url({{URL::asset('img/1920x1080/investidor-fundo.jpg);')}}">
       <!-- Info -->
       <div class="container text-center space-2 space-3--lg">
         <div class="w-lg-75 mx-lg-auto">
@@ -76,7 +76,7 @@
             <div class="mb-4">
               <!-- <span class="u-label u-label--sm u-label--purple mb-3">Manage</span> -->
               <!-- <h2 class="h3">One solution. Endless value.</h2> -->
-              <p class="feature-section-paragraphy"><b>Somos um Marketplace</b> de Crédito e Investimento Coletivo <b>especializado no Segmento Imobiliário</b> (Peer-to-Peer Lending) rápido, seguro, transparente e online. .</p>
+              <p class="feature-section-paragraphy">Somos um Marketplace de Crédito e Investimento Coletivo especializado no Segmento<b> Imobiliário</b> (Peer-to-Peer Lending) rápido, seguro, transparente e online.</p>
             </div>
 <!--             <a class="btn btn-sm btn-primary btn-wide" href="https://themes.getbootstrap.com/product/space-multipurpose-responsive-template/">
               Learn More
@@ -84,8 +84,8 @@
             </a>
  -->          </div>
         </div>
-        <div class="col-md-6 order-md-1" style="margin-bottom: -12%;">
-          <object type="image/png" style="height: 80%" data="{{URL::asset('img/building-intro.png')}}"></object>
+        <div class="col-md-6 order-md-1">
+          <object type="image/png" style="height: 50%" data="{{URL::asset('img/building-intro.png')}}"></object>
         </div>
       </div>
     </div>
@@ -98,29 +98,28 @@
     <!-- End Divider -->
 
     <!-- Features Section -->
-    <!----------------------------------------------------------- -->
-    <!--           Hiden by Cleiton 2018 nov-29                   -->
-    <!----------------------------------------------------------- -->
-    <!--<div class="container space-2 space-3--lg">
+    <div class="container space-2 space-3--lg">
       <div class="row justify-content-lg-between">
         <div class="col-md-6 mb-5 mb-md-0">
           <div class="pr-md-4">
             <div class="mb-4">
-              <span class="u-label u-label--sm u-label--purple mb-3">Monitor</span>
-              <h2 class="h3">Case information on a single page</h2>
-              <p class="feature-section-paragraphy">Uma de nossas premissas é a segurança do capital do investidor, e por isso mitigamos os riscos de todas as operações com <b><u>Garantias Reais – Imóveis</u></b>, além da analise de credito dos tomadores de recursos e acompanhamento da operação ate a sua liquidação..</p>
+              <!-- <span class="u-label u-label--sm u-label--purple mb-3">Monitor</span> -->
+              <!-- <h2 class="h3">Case information on a single page</h2> -->
+              <p class="feature-section-paragraphy">A segurança do capital do investidor é muito importante para nós, e por isso todas as operações possuem Garantias Reais de Imóveis, e passam por uma análise de crédito e aprovação antes da oferta.
+</p>
             </div>
-         <a class="btn btn-sm btn-primary btn-wide" href="https://themes.getbootstrap.com/product/space-multipurpose-responsive-template/">
+<!--             <a class="btn btn-sm btn-primary btn-wide" href="https://themes.getbootstrap.com/product/space-multipurpose-responsive-template/">
               Learn More
               <span class="fa fa-angle-right font-size-14 ml-2"></span>
-            </a>
+            </a> -->
           </div>
         </div>
+
         <div class="col-md-6">
-          <object type="image/svg+xml" data="{{URL::asset('svg/mockups/tablet-mockup-2.svg')}}"></object>
+          <object class="img-fluid our-premisses" type="image/jpeg" style="height:50%" data="{{URL::asset('img/house-por-cento.png')}}"></object>
         </div>
       </div>
-    </div>-->
+    </div>
     <!-- End Features Section -->
 
     <!-- Features Section -->
@@ -222,7 +221,7 @@
     <!-- End Features Section -->
 
     <!-- CTA Section -->
-    <div class="gradient-overlay-half-purple-v2 bg-img-hero-center" style="background-image: url({{URL::asset('img/1920x400/img1.jp);')}}">
+    <!-- <div class="gradient-overlay-half-purple-v2 bg-img-hero-center" style="background-image: url({{URL::asset('img/1920x400/img1.jp);')}}">
       <div class="container text-center space-2 specifc-align-tems">
         <p class="landing-scenario-header">  <h2> CENÁRIO DE CRÉDITO NO PAÍS </h2>   </p>
         <div class="container-landing-scenario">
@@ -246,7 +245,7 @@
             <img src="{{URL::asset('img/investor-home-bank-profit.png')}}" class="img-fluid" alt="">
             <p>Bancos registram os maiores lucros entre as empresas de capital aberto.</p>
           </div>
-        </div>
+        </div> -->
           <!-------------------------------------------->
           <!-- Elemente hidden by Cleiton 2018 DEC-03 -->
           <!-------------------------------------------->
@@ -256,9 +255,9 @@
           </div>
           <a class="btn btn-primary btn-wide mb-2 mb-md-0" href="https://themes.getbootstrap.com/product/space-multipurpose-responsive-template/">Start Free Trial</a>
         </div> -->
-      </div>
+      <!-- </div>
       <p class="info-source">Fontes: G1, BACEN, Estadão, Reuters </p>
-    </div>
+    </div> -->
     <!-- End CTA Section -->
 
     <!-- Pricing Section -->
@@ -266,9 +265,10 @@
       <!-- Title -->
       <div class="mx-md-auto mb-9">
           <div class="what-we-do">
-            <div class="title-what-we-do"> 
+            <!-- <div class="title-what-we-do"> 
               <h2>O QUE FAZEMOS?</h2>
-            </div>
+            </div> -->
+            <h1>O QUE FAZEMOS?</h1>
             <p>
               Conectamos pessoas e empresas à procura de crédito com investidores e instituições com dinheiro para emprestar.                
             </p>
@@ -286,11 +286,11 @@
               <li>Possibilidade de analisar o risco e a garantia de cada operação</li>
               <li>Transparência, segurança e controle dos investimentos</li>
             </ul>
-            <p><b>Ambos acessam as melhores taxas</b></p>
+            <p style= "color: red"><b>Ambos acessam as melhores taxas</b></p>
             <ul>
               <li>Taxas de juros menores do que as oferecidas pelos bancos</li>
               <li>Menos burocracia</li>
-              <li>Acesso a uma nova fonte de captação</li>
+              <li>Acesso à uma nova fonte de captação</li>
             </ul>
           </div>
       </div>
@@ -307,7 +307,8 @@
             <b> Pessoa Física </b>
           </h5>
           <p class="pessoa-fisica-linha">____________________</p>
-          <small class="d-block text-muted">Rendimento acima de R$ 10 mil por mês </small>  
+          <!-- <small class="d-block text-muted">Rendimento acima de R$ 10 mil por mês </small> -->
+
             <!-- <h4>Team</h4>
             <h5 class="h1 text-primary">
               $69
@@ -369,8 +370,8 @@
               $129
             </h5>
             <p>per active case, per month<br>billed monthly</p>
-            <small class="d-block text-muted">No credit card required. Request a Demo</small>
-          </header> -->
+            <small class="d-block text-muted">No credit card required. Request a Demo</small> -->
+          </header>
           <!-- End Header -->
 
           <!-- Content -->
@@ -401,7 +402,7 @@
             <!-- alterações slide 11 -->
             <div style="width: 1080px">
               <h2 style="text-align:center">Perguntas?</h2>
-              <p style="text-align:center">Veja as perguntas mais frequentes.</p>
+              <a href="#"> <p style="text-align:center">Veja as perguntas mais frequentes.</p> </a>
             </div>
             <!-- End Title -->
 
@@ -524,4 +525,4 @@
     <!-- End Clients Section -->
   </main>
   <!-- ========== END MAIN CONTENT ========== -->
-@endsection
+  @endsection

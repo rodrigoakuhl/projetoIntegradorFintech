@@ -43,7 +43,11 @@
                     <!--- Sidemenu -->
                     <ul class="metismenu side-nav">
 
-                        <li class="side-nav-title side-nav-item">Navigation</li>
+                        <li class="side-nav-title side-nav-item">
+                            <span class="logo-lg">
+                                <img src="{{URL::asset('img/REMSBRANCO.png')}}" alt="" height="50">
+                            </span>
+                        </li>
 
                         <li class="side-nav-item">
                             <a href="/dashboard/cadastro" class="side-nav-link">
@@ -59,6 +63,14 @@
                                 <!-- <span class="badge badge-success float-right">7</span> -->
                                 <span> Oportunidades </span>
                             </a>
+                        </li>
+
+                        <li class="side-nav-item">
+                            <a href="/dashboard/oportunidades" class="side-nav-link">
+                                <i class="dripicoins-wallet"></i>
+                                <span>Meus Investimentos</span>
+                            </a>
+
                         </li>
 <!-- 
                         <li class="side-nav-item">

@@ -7,9 +7,9 @@
           <!-- Logo -->
           <div class="u-header__navbar-brand-wrapper">
             <a class="navbar-brand u-header__navbar-brand" href="index.html" aria-label="Space">
-              <img class="u-header__navbar-brand-default" src="{{URL::asset('svg/logos/logo-white.svg')}}" alt="Logo">
-              <img class="u-header__navbar-brand-on-scroll" src="{{URL::asset('svg/logos/logo.svg')}}" alt="Logo">
-              <img class="u-header__navbar-brand-mobile" src="{{URL::asset('svg/logos/logo-short.svg')}}" alt="Logo">
+              <img class="u-header__navbar-brand-default" src="{{URL::asset('img/REMSBRANCO.png')}}" alt="Logo">
+              <img class="u-header__navbar-brand-on-scroll" src="{{URL::asset('img/REMSPRETO.png')}}" alt="Logo">
+              <img class="u-header__navbar-brand-mobile" src="{{URL::asset('img/REMSBRANCO.png')}}" alt="Logo">
             </a>
           </div>
           <!-- End Logo -->

@@ -70,7 +70,7 @@
         <div class="col-lg-4 order-lg-1 d-flex align-items-start flex-column">
           <!-- Logo -->
           <a class="d-inline-block mb-5" href="index.html" aria-label="Space">
-            <img src="{{URL::asset('svg/logos/logo-short-white.svg')}}" alt="Logo" style="width: 40px; max-width: 100%;">
+            <img src="{{URL::asset('img/REMSBRANCO.png')}}" alt="Logo" style="width: 116px; max-width: 100%;">
           </a>
           <!-- End Logo -->
 

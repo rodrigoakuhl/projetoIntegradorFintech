@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('/', 'PaginaInicialController@showInvestidorHome');
+Route::get('/', 'PaginaInicialController@showInvestidorHome')->name('home');
 
 Route::get('/investidor', 'PaginaInicialController@showInvestidorHome');
 Route::get('/emprestimos', 'PaginaInicialController@showEmprestimosHome');
@@ -23,6 +23,10 @@ Route::get('dashboard/cadastro', 'CadastroController@exibirCadastro');
 Route::post('dashboard/cadastro', 'CadastroController@salvarCadastro');
 
 Auth::routes();
+// Auth::get('/home', 'HomeController@index');
+Auth::routes(['verify' => true]);
+
+
 
 Route::get('sair', function(){
     Auth::logout();
