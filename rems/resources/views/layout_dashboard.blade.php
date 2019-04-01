@@ -32,14 +32,14 @@
                 <div class="slimscroll-menu">
 
                     <!-- LOGO -->
-                    <a href="index.html" class="logo text-center">
+                    <!-- <a href="index.html" class="logo text-center">
                         <span class="logo-lg">
                             <img src="{{URL::asset('dash/assets/images/logo.png')}}" alt="" height="16">
                         </span>
                         <span class="logo-sm">
                             <img src="{{URL::asset('dash/assets/images/logo_sm.png')}}" alt="" height="16">
                         </span>
-                    </a>
+                    </a> -->
 
                     <!--- Sidemenu -->
                     <ul class="metismenu side-nav">
