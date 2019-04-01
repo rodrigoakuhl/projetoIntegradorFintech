@@ -37,7 +37,7 @@
                         <td>
                             @switch($operacao->status)
                                 @case(1)
-                                Processando @break
+                                Aguardando pagamento @break
                                 @case(2)
                                 Processado @break
                                 @case(3)
